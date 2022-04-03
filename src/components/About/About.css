@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  max-width: min(112rem, 90%);
+  margin: 0 auto;  
+  background: #fbfcff;
+}
+.container{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img text"
+                        "avatar avatar";
+    
+}
+.container section{
+  grid-area: avatar;
+}
+.imgAbout img{
+  width: 80%;
+}
+
+.textAbout {
+  font-family: 'Poppins', sans-serif;
+  color: #0d114f;
+}
+.textAbout h2 {
+  font-size: clamp(20px, 5vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: initial;
+}
+.textAbout p{
+  font-size: clamp(15px, 4vw, 1.6rem);
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: initial;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem
+}
+.textAbout ul li{
+  font-size: clamp(14px, 4vw, 1.2rem);
+  text-align: initial;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+/*SECTION PERFIL MEMBROS*/
+
+.avatar{
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.avatar > div{
+  flex: 1 1 50px;
+  margin: 10px
+}
+.avatarSingle img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  margin-bottom: 1.5rem;
+}
+.avatar .avatarSingle{
+  align-items: center;
+  padding: 2rem 4rem
+}
+.avatarSingle > p >a{
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(13px, 3vw, 1.4rem);
+
+  background: #607EA2;
+  color: #fff;
+  text-decoration: none;
+  
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.avatarSingle > p >a:hover{
+  background: #376aa9;
+}
