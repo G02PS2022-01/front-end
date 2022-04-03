@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <div className="Home">
         <div className="page-header">
-          <Navbar />
+          
         </div>
         <div className="page-center">
           <div className="page-center-left">
