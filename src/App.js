@@ -1,12 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import './App.css';
+
 import IndexFooter from './components/Footer/IndexFooter';
+
 
 
 function App() {
   return (
     <div className="App">
+
       <div className="Home">
         <div className="page-header">
             <Navbar />
@@ -30,6 +33,7 @@ function App() {
           <IndexFooter />
         </div>
       </div>
+
     </div>
   );
 }
