@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 
 import IndexFooter from './components/Footer/IndexFooter';
-
+import Team from './components/Team/Team';
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
             {/* <h1>a</h1> */}
           </div>
         </div>
+        <Team />
         <div className="page-footer">
           <IndexFooter />
         </div>
