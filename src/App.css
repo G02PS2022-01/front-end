@@ -1,3 +1,47 @@
+:root {
+  --dark-blue: #607EA2;
+  --light-blue: #C8F1FE;
+}
+
+* {
+  margin: 0;
+}
+/* Center component */
+/* ---------------- */
+.page-center {
+  padding: 12rem 3rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  background-color: var(--light-blue);
+}
+.page-center-left {
+  font-size: x-large;
+  font-weight: bolder;
+
+  flex-basis: 50%;
+}
+.page-center-left p {
+  text-align: justify;
+}
+.page-center-right {
+  flex-basis: 50%;
+}
+/* --------------- */
+.button {
+  margin: 5rem;
+  padding: 1.5rem;
+  font-size: 22px;
+}
+.action-button {
+  color: white;
+  background-color: var(--dark-blue);
+  border-radius: 12px;
+}
+
+/* --------------- */
 .App {
   text-align: center;
 }
@@ -35,4 +79,5 @@
   to {
     transform: rotate(360deg);
   }
+
 }
