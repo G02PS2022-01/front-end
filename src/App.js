@@ -1,15 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
-import IndexFooter from './components/Footer/IndexFooter';
+import Navbar from "./components/Navbar/Navbar";
+import About from './components/About/About'
 import Team from './components/Team/Team';
+import IndexFooter from './components/Footer/IndexFooter';
 
 
 function App() {
   return (
     <div className="App">
-
       <div className="Home">
         <div className="page-header">
             <Navbar />
@@ -29,14 +30,13 @@ function App() {
             {/* <h1>a</h1> */}
           </div>
         </div>
+        <About />
         <Team />
         <div className="page-footer">
           <IndexFooter />
         </div>
       </div>
-
     </div>
-  );
+  )
 }
-
 export default App;
