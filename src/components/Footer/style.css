@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #607EA2;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px auto;
+   font-style: Poppins;
+}
+
+.footer_conteiner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-cop{
+    padding-bottom: 20px;
+}
+
+.links {
+    padding: 50px;
+    flex: 1 1;
+    
+}
+
+.links > ul {
+    list-style: none;
+    text-align: initial;
+
+}
