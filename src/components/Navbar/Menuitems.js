@@ -1,6 +1,6 @@
 export const MenuItems = [
     {
-        title: 'O que é Programação',
+        title: 'O que é Programação?',
         url:'#',
         cName: 'nav-links',
     },

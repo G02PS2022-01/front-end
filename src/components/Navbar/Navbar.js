@@ -1,5 +1,6 @@
 import React, {Component} from 'react';  // pode ser usado React.Component na class ou apenas assim//
 import {MenuItems} from './Menuitems';
+import {Button} from '../Button';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -12,7 +13,7 @@ class Navbar extends Component {
     render(){
         return(
             <nav className='NavbarItems'> 
-                <h1 className='navbar-logo'> DogCode <i className='fab fa-react'></i> </h1>
+                <h1 className='navbar-logo'> DogCode <i className='fas fa-paw'></i> </h1>
                 <div className='menu-icon'onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times':'fas fa-bars' }></i>
 
@@ -30,6 +31,7 @@ class Navbar extends Component {
                         )
                     } )}
                 </ul>
+                <Button>Sign in </Button>
             </nav>
         )
     }
