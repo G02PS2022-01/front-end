@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 import IndexFooter from './components/Footer/IndexFooter';
+
 
 function App() {
   return (
     <div className="App">
       <div className="Home">
         <div className="page-header">
-          
+            <Navbar />
         </div>
         <div className="page-center">
           <div className="page-center-left">
