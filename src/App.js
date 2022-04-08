@@ -1,11 +1,10 @@
 import React from "react";
-import logo from './logo.svg'
 import './App.css'
 
-import Navbar from "./components/Navbar/Navbar";
-import About from './components/About/About'
-import Team from './components/Team/Team';
-import IndexFooter from './components/Footer/IndexFooter';
+import Navbar from "./Layouts/Navbar/Navbar";
+import About from './Pages/About/About'
+import Team from './Components/Team/Team';
+import IndexFooter from './Layouts/Footer/IndexFooter';
 
 
 function App() {
