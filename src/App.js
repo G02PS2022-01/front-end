@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css'
 
-import Navbar from "./Layouts/Navbar/Navbar";
-import About from './Pages/About/About'
-import Team from './Components/Team/Team';
-import IndexFooter from './Layouts/Footer/IndexFooter';
+import Navbar from "./layouts/Navbar/Navbar";
+import About from './pages/About/About'
+import Team from './components/Team/Team';
+import IndexFooter from './layouts/Footer/IndexFooter';
 
 
 function App() {

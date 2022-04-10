@@ -1,6 +1,6 @@
 import React, {Component} from 'react';  // pode ser usado React.Component na class ou apenas assim//
 import {MenuItems} from './Menuitems';
-import {Button} from '../../Components/Button';
+import {Button} from '../../components/Button';
 import './Navbar.css';
 
 class Navbar extends Component {

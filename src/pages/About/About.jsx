@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import team from '../../Assets/images/team.svg'
+import team from '../../assets/images/team.svg'
 
 const About = () => {
   return (
