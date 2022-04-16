@@ -1,34 +1,45 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './About.css'
-import team from '../../assets/images/team.svg'
+import macbook from '../../assets/img/macbook.svg'
+import '../../assets/icon/style.css'
+import { Link } from 'react-router-dom';
 
 const About = () => {
+  const [click, setClick] = useState(false);
+ 
+  const closeMobileMenu = () => setClick(false);
+
   return (
     <>
-      <div className="container">
-        <div className="imgAbout">
-          <img src={team} alt="" />
+      <section className="section" id="about">
+        <div className="container grid">
+          <div className="image">
+            <img src={macbook} alt="" />
+          </div>
+          <div className="text">
+            <h2 className="title">Sobre nós</h2>
+            <p>
+              O DogCode foi criado por grupo de alunos do curso de Ciência da
+              computação da Universidade Federal do Tocantins , para a materia
+              de Projeto de Sistemas. Ao perceber que a programação está se
+              tornando uma habilidade essencial, queremos possibilitar seus
+              primeiros passos.
+            </p>
+            <br />
+            <p>
+              Criamos o DogCode para ajudar pessoas como você a ingressar no
+              mundo da programação de maneira fácil e divertida. Esperamos que
+              você goste e que ajude você a embarcar ou continuar sua jornada
+              aprendendo a programar.
+            </p>
+
+            <br />
+            <a className="button"><Link to='/about-us' onClick={closeMobileMenu} >Conheça Nossa Equipe</Link>
+            </a>
+          </div>
         </div>
-        <div className="textAbout">
-          <h2>Um pouco sobre nossa equipe e projeto.</h2>
-          <p>
-            Somos alunos da disciplina Projeto de Sistemas pelo curso Ciência da
-            Computação na Universidade Federal do Tocantins, e como projeto
-            decorrente da disciplina. Desenvolveremos uma aplicação com a
-            finalidade do ensino básico e introdução a programação para
-            indíviduos que qurem aprender de maneira simples e divertida a
-            programar.
-          </p>
-          <p>Objetivos:</p>
-          <ul>
-            <li>Desenvolver aplicação</li>
-            <li>Deixar o mais didático possível</li>
-            <li>
-              Aplicar modelos de ensino e gamificação aque obtiveram sucesso
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
+      
     </>
   )
 }
