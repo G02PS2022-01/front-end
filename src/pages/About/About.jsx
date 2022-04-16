@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react';
 import './About.css'
 import macbook from '../../assets/img/macbook.svg'
 import '../../assets/icon/style.css'
+import { Link } from 'react-router-dom';
 
 const About = () => {
+  const [click, setClick] = useState(false);
+ 
+  const closeMobileMenu = () => setClick(false);
+
   return (
     <>
       <section className="section" id="about">
@@ -29,11 +34,8 @@ const About = () => {
             </p>
 
             <br />
-            <a
-              className="button"
-              href="file:///C:/Users/wanol/Desktop/ps/abouts.html"
-              >Conheça Nossa Equipe</a
-            >
+            <a className="button"><Link to='/about-us' onClick={closeMobileMenu} >Conheça Nossa Equipe</Link>
+            </a>
           </div>
         </div>
       </section>

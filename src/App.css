@@ -61,6 +61,9 @@ body {
   font: 500 1rem var(--body-fonts);
   transition: background 0.3s;
 }
+.button a{
+  color: #fff
+}
 .button:hover {
   background: var(--base-color-alt);
 }
