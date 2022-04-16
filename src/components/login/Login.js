@@ -5,35 +5,27 @@ import imagemGoogle from "../../assets/img/google.png";
 
 const Login = ()=>{
     return(
-
-    <div className="containerLogin">
-        <div className="buttonEmail">
-            
-            <div className="buttonEntrar">
-                <a href="#">
-                        Entrar com Google
-                <img src={imagemGoogle}/> 
-                </a>
+        <section class="section" id="login">
+          <div class="container grid">
+            <div class="imageLogin">
+              <img src="./img/login.svg" alt="" />
             </div>
-
-            <div className="buttonSign">
-                <a href="#">
-
-                        Sign e-mail
-                    
-                <img src={imagemEmail}/> 
-                </a>
+  
+            <div class="login">
+              <div class="loginGoogle">
+                <a class="button" href="#"
+                  >Entrar com Google <i class="icon-google"></i
+                ></a>
+              </div>
+              <div class="loginEmail">
+                <a class="button" href="#"
+                  >Sign in E-mail <i class="icon-gmail"></i
+                ></a>
+              </div>
+              <a href="#" class="register">Cadastrar usando E-mail</a>
             </div>
-                <div className="novoUsuario">
-                <p>
-                    Cadastrar usando <a href="#">e-mail</a>
-                </p>
-        </div>
-            
-        
-        </div>
-        
-    </div>
+          </div>
+        </section>
     )
 }
 

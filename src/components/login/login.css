@@ -1,69 +1,68 @@
-.containerLogin{
-    height: 100vh;
-    background-color: #ffffff;
-    display: flex;
+#login .container {
+    margin: 0;
+  }
+  #login img {
+    display: none;
+  }
+  .login{
+    align-items: center;
     text-align: center;
-    justify-content: safe;
-    align-items: center;
-    font-family: IBM Plex Sans Thai;
-}
-
-.buttonEmail{
-    text-align: -webkit-center;
-       
-}
-
-.buttonEntrar >a{
-    width: 40%;
-    padding: 4px;
-    background-color: #835AFD;
-    display: flex;
+    font: 500 var(--subtitle-font-size) var(--title-fonts)
+  }
+  a.button{
     justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid black;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: white;    
-    font-family: IBM Plex Sans Thai;
-    font-size: 18px;
-}
-
-.buttonSign >a{
-    width: 40%;
-    padding: 4px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid black;
-    text-decoration: none;
-    color: #835AFD;   
-    font-size: 18px;
-    font-family: IBM Plex Sans Thai;
-   
-
-}
-
-.buttonEntrar>a>img{
-    margin-left: 20px;
-    width: 10%;
-    
-}
-
-.buttonSign>a>img{
-    margin-left: 75px;
-    width: 10%;
-}
-
-
-
-.novoUsuario>p{
-    color: black;
-}
-
-
-
-
-
+    font: 500 var(--subtitle-font-size) var(--title-fonts);
+  }
+  .loginGoogle{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .loginGoogle .button{
+    width: -webkit-fill-available;
+  }
+  .loginEmail{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .loginEmail a{
+    width: -webkit-fill-available;
+  }
+  .register{
+    color: var(--text-color);
+  }
+  
+  /***** MEDIA QUERIES *****/
+  /*extra large devices: 1200 >*/
+  @media(min-width: 1200px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /*extra large devices: 992px >*/
+  @media(min-width: 992px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
