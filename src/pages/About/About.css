@@ -1,52 +1,121 @@
-* {
+/*************** ABOUT ****************/
+#about {
+  background: white;
+}
+#about .container {
   margin: 0;
-  padding: 0;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
 }
-html{
-  font-size: 62.5%;
+#about .image {
+  position: relative;
 }
-body{
-  /*max-width: min(112rem, 90%);*/
-   margin: 0 auto;  
-   background: #fbfcff;
- }
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3rem
+#about .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
 }
-.container > div{
-  flex: 1 1 300px;
-  margin: 2rem
+#about .image img {
+  position: relative;
 }
-.imgAbout img{
-  width: 80%;
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
 }
-.textAbout {
-  font-family: 'Poppins', sans-serif;
-  color: #0d114f;
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
-.textAbout h2 {
-  font-size: clamp(25px, 5vw, 3.0rem);
-  font-weight: 700;
-  margin-bottom: 3rem;
-  text-align: initial;
+
+/***** MEDIA QUERIES *****/
+/*extra large devices: 1200 >*/
+@media(min-width: 1200px){
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding: 10rem 0;
+  }
+  .section header{
+    max-width: 40rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+  /*About*/
+  #about .container {
+    margin: 0 auto;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    align-items: center;
+  }
 }
-.textAbout p{
-  font-size: clamp(15px, 4vw, 1.7rem);
-  font-weight: 00;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: initial;
-  line-height: 2.2rem
+
+/*large devices:1023 >*/
+@media(min-width: 1023px){
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+  /*About*/
+  #about .container {
+    margin: 0 auto;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    align-items: center;
+  }
 }
-.textAbout ul li{
-  font-size: clamp(14px, 4vw, 1.7rem);
-  text-align: initial;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  font-weight: 500;
+
+/*large devices: 992 >*/
+@media(min-width: 992px){
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+}
+
+/*Mediun devices 767 >*/
+@media(min-width: 767px){
+  /*About*/
+  #about .container {
+    margin: 0 auto;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+}
+
+
+/*************** VOLTAR AO TOPO ****************/
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  
+  padding: 0.5rem;
+  clip-path: circle();
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
