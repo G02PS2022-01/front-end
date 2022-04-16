@@ -1,13 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './components/login/Login';
+import React from 'react'
+import Navbar from './layouts/Navbar/Navbar'
+import About from './pages/About/About'
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+//import IndexFooter from './components/Footer/IndexFooter';
+import Home from './pages/Home'
+import SignIn from './pages/SignIn'
+import WhatCoding from './pages/WhatCoding'
+import AboutUs from './pages/About/AboutUs'
 
 function App() {
   return (
-    <div className="App">
-     <Login/>
-    </div>
-  );
+    <Router>
+      <Navbar />
+      <About />
+      <Routes>
+        <Route path="/" exact component={Home} />
+        <Route path="what-coding" component={WhatCoding} />
+        <Route path="about-us" component={AboutUs} />
+        <Route path="sign-in" component={SignIn} />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App
