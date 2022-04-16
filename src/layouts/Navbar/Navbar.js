@@ -1,5 +1,4 @@
-import React, {useState} from 'react';  // pode ser usado React.Component na class ou apenas assim//
-//import {MenuItems} from './Menuitems';
+import React, {useState} from 'react'; 
 import {Button} from '../../components/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -13,10 +12,9 @@ function Navbar (){
 
     return(
     <>
-      <nav className='navbar'>
+      <nav id="header"  className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          DogCode
-          <i class='fab fa-firstdraft' />
+          <a class="logo" href="#home">Dog<span>Code</span>.</a>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

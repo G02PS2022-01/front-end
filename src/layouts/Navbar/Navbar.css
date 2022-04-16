@@ -1,10 +1,48 @@
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: #835AFD;
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: #5c41af;
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-fonts: 'Poppins', sans-serif;
+  --body-fonts: 'DM Sans', sans-serif;
+}
+
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+  width: 100%;
+}
+#header.scroll {
+   /* background: var(--base-color);  */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
+    height: var(--header-height);
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    justify-content: space-between;
+    width: 100%;
   }
   
   .navbar-logo {
@@ -16,9 +54,15 @@
     font-size: 2rem;
   }
   
-  .fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
+  .logo {
+    font: 700 1.31rem var(--title-fonts);
+    color: var(--title-color);
+  }
+  .logo span {
+    color: var(--base-color);
+  }
+  .logo-alt span{
+    color: var(--body-color);
   }
   
   .nav-menu {
@@ -80,7 +124,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #249999;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -128,7 +172,7 @@
       margin: 2rem auto;
       border-radius: 4px;
       width: 80%;
-      background: #1888ff;
+      background: var(--base-color);
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
