@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./layouts/Navbar/Navbar";
 import './App.css';
+import 'flowbite';
+import { DogProvider } from "./DogCodeContext/DogProvider";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import IndexFooter from './components/Footer/IndexFooter';
 import Home from "./pages/Home";
@@ -11,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
+    <DogProvider>
     <Router>
       <Navbar />
           <Routes>
@@ -20,8 +23,8 @@ function App() {
             <Route path="about-us" component={AboutUs} />
             <Route path="sign-in" component={SignIn} />
           </Routes>
-      
     </Router>
+    </DogProvider>
 
   );
 }

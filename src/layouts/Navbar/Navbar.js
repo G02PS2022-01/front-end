@@ -1,4 +1,6 @@
 import React, {useState} from 'react';  // pode ser usado React.Component na class ou apenas assim//
+import LoginModal from '../../components/LoginModal';
+import { DogContext } from '../../DogCodeContext/DogContext';
 //import {MenuItems} from './Menuitems';
 import {Button} from '../../components/Button';
 import { Link } from 'react-router-dom';
@@ -6,10 +8,9 @@ import './Navbar.css';
 
 function Navbar (){
     const [click, setClick] = useState(false);
-
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
+  
 
     return(
     <>
@@ -36,16 +37,17 @@ function Navbar (){
           </li>
           <li>
             <Link
-              to='/sign-up'
+              to='#'
               className='nav-links-mobile'
-              onClick={closeMobileMenu}
+             
             >
                   Sign Up
             </Link>
           </li>
         </ul>
-        <Button />
+        <Button  />
       </nav>
+      <LoginModal />
     </>
     
     )
