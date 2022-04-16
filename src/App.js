@@ -3,7 +3,7 @@ import Navbar from './layouts/Navbar/Navbar'
 import About from './pages/About/About'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-//import IndexFooter from './components/Footer/IndexFooter';
+import IndexFooter from './layouts/Footer/IndexFooter';
 import Home from './pages/Home'
 import SignIn from './pages/SignIn'
 import WhatCoding from './pages/WhatCoding'
@@ -20,6 +20,7 @@ function App() {
         <Route path="about-us" component={AboutUs} />
         <Route path="sign-in" component={SignIn} />
       </Routes>
+      <IndexFooter />
     </Router>
   )
 }

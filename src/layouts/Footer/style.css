@@ -1,39 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
+.logo {
+  font: 700 1.31rem var(--title-fonts);
+  color: var(--title-color);
+}
+.logo span {
+  color: var(--base-color);
+}
+.logo-alt span{
+  color: var(--body-color);
 }
 
-footer{
-    background-color: #607EA2;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 30px auto;
-   font-style: Poppins;
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.footer_conteiner{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+.grid {
+  display: grid;
+  gap: 2rem;
 }
 
-.footer-cop{
-    padding-bottom: 20px;
+.section {
+  padding: calc(5rem + var(--header-height)) 0;
+}
+.section .title {
+  margin-bottom: 1rem;
+}
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
-.links {
-    padding: 50px;
-    flex: 1 1;
+footer {
+  background: var(--base-color);
+}
+footer.section {
+  padding: 4rem 0;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+footer .social {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+footer .social a:hover {
+  transform: translateY(-10px);
+}
+footer .menuFooter ul{
+  color: var(--text-color-light);
+  justify-content: initial;
+}
+
+footer .menuFooter ul li{
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1200px){
+    .container {
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section {
+      padding: 10rem 0;
+    }
+    .section header{
+      max-width: 40rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+
+    /*Footer*/
+    footer.section {
+      padding: 3.75rem 0;
+    }
+
+    footer .container {
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer .logo {
+      font-size: 2.25rem;
+    }
     
 }
 
-.links > ul {
-    list-style: none;
-    text-align: initial;
-
-}
+#meulink { color: #fff; }
