@@ -1,9 +1,9 @@
 .containerLogin{
     height: 100vh;
-    background-color: #E6EAE7;
+    background-color: #ffffff;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: safe;
     align-items: center;
     font-family: IBM Plex Sans Thai;
 }
@@ -14,24 +14,24 @@
 }
 
 .buttonEntrar >a{
-    width: 50%;
-    padding: 5px;
-    background-color: #607EA2;
+    width: 40%;
+    padding: 4px;
+    background-color: #835AFD;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    border: 1px solid #607EA2;
+    border: 1px solid black;
     margin-bottom: 20px;
     text-decoration: none;
-    color: black;    
+    color: white;    
     font-family: IBM Plex Sans Thai;
     font-size: 18px;
 }
 
 .buttonSign >a{
-    width: 50%;
-    padding: 5px;
+    width: 40%;
+    padding: 4px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -39,8 +39,11 @@
     border-radius: 15px;
     border: 1px solid black;
     text-decoration: none;
-    color: black;   
+    color: #835AFD;   
     font-size: 18px;
+    font-family: IBM Plex Sans Thai;
+   
+
 }
 
 .buttonEntrar>a>img{
@@ -54,10 +57,7 @@
     width: 10%;
 }
 
-.imageLogin >img{
-    width: 80%;
-    transform: rotate(345deg);
-}
+
 
 .novoUsuario>p{
     color: black;
