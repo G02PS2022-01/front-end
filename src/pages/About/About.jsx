@@ -34,8 +34,10 @@ const About = () => {
             </p>
 
             <br />
-            <a className="button"><Link to='/about-us' onClick={closeMobileMenu} >Conheça Nossa Equipe</Link>
-            </a>
+            
+            <Link  className="button" to='/about-us' onClick={closeMobileMenu} > Conheça Nossa Equipe
+            </Link>
+            
           </div>
         </div>
       </section>
