@@ -1,12 +1,10 @@
 import React from 'react'
 import Navbar from './layouts/Navbar/Navbar'
-import About from './pages/About/About'
-import Step from './pages/Home-page/Step/Step'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import IndexFooter from './layouts/Footer/IndexFooter'
 import Home from './pages/Home-page/Home'
-import SignIn from './pages/SignIn'
+import SignIn from './pages/SignIn';
 import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum'
@@ -17,16 +15,14 @@ function App() {
     
     <Router>
       <Navbar />
-      <About />
-      <Step />
-      <Routes>
-        <Route path="/" exact element={Home} />
-        <Route path="what-coding" element={WhatCoding} />
-         <Route path="about-us" element={AboutUs} /> 
-         <Route path="curriculum" element={Curriculum} />
-         <Route path="glossary" element={Glossary} />
-         <Route path="sign-in" element={SignIn} />  
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/what-coding" component={WhatCoding} />
+         <Route exact path="/about-us" component={AboutUs} /> 
+         <Route exact path="/curriculum" component={Curriculum} />
+         <Route exact path="/glossary" component={Glossary} />
+         <Route exact path="/sign-in" component={SignIn} />  
+      </Switch>
       <IndexFooter />
     </Router>
 
