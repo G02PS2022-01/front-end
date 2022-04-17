@@ -1,7 +1,5 @@
 import React from "react";
 import './login.css';
-import imagemEmail from "../../assets/img/email.png";
-import imagemGoogle from "../../assets/img/google.png";
 
 const Login = ()=>{
     return(
