@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './layouts/Navbar/Navbar'
 import About from './pages/About/About'
+import Home from './pages/Home-page/Home'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import IndexFooter from './layouts/Footer/IndexFooter';
-import Home from './pages/Home'
 import SignIn from './pages/SignIn'
 import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Home />
       <About />
       <Routes>
         <Route path="/" exact component={Home} />
