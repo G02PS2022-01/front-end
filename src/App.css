@@ -28,8 +28,8 @@ img {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
 
-  /* fonts */
-  --title-font-size: 1.875rem;
+  /* fonts
+  --title-font-size: 1.875rem; */
   --subtitle-font-size: 1rem;
 
   --title-fonts: 'Poppins', sans-serif;
@@ -40,16 +40,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font: 400 1rem var(--body-fonts);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
-.title {
-  font: 700 var(--title-font-size) var(--title-fonts);
-  color: var(--title-color);
-  -webkit-font-smoothing: auto;
-}
+
 .button {
   background-color: var(--base-color);
   color: var(--text-color-light);
