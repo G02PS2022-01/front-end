@@ -1,26 +1,28 @@
 import React from "react";
 import './login.css';
+ import login from "../../assets/img/login.svg";
+ import '../../assets/icon/style.css'
 
 const Login = ()=>{
     return(
-        <section class="section" id="login">
-          <div class="container grid">
-            <div class="imageLogin">
-              <img src="./img/login.svg" alt="" />
+        <section className="section" id="login">
+          <div className="container grid">
+            <div className="imageLogin">
+              <img src={login}  alt="" />
             </div>
   
-            <div class="login">
-              <div class="loginGoogle">
-                <a class="button" href="#"
-                  >Entrar com Google <i class="icon-google"></i
-                ></a>
+            <div className="login">
+              
+              <div className="loginGoogle">
+                <a className="button" href="#"
+                  >Entrar com Google <i className="icon-google"></i></a>
               </div>
-              <div class="loginEmail">
-                <a class="button" href="#"
-                  >Sign in E-mail <i class="icon-gmail"></i
-                ></a>
+              <div className="loginEmail">
+                <a className="button" href="#"
+                  >Sign in E-mail <i className="icon-gmail"></i></a>
               </div>
-              <a href="#" class="register">Cadastrar usando E-mail</a>
+              <a href="#" className="register">Cadastrar usando E-mail</a>
+
             </div>
           </div>
         </section>
