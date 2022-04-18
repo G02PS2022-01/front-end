@@ -18,9 +18,9 @@ const WhatCoding =() => {
 
             </p>
 
-            <br />
-            
+            <br />  
           </div>
+          
         </div>
       </section>
       
