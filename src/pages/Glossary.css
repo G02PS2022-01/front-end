@@ -12,6 +12,9 @@
 #itemmenu li{
   margin-bottom: 0.625rem;
 }
+.section .subtitle {
+  color: #757575;
+}
 #itemmenu li a:hover{
   color: var(--base-color);
   font-weight: 600;
