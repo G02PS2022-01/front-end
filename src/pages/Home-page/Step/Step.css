@@ -27,7 +27,7 @@
 }
 
 
-
+/*************** PASSO A PASSO ****************/
 .title {
   font-size: 1.875rem;
   font-weight: 700;
@@ -82,7 +82,7 @@
   }
   /*Passo a passo*/
   .title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--title-fonts);
     color: var(--title-color);
@@ -105,7 +105,7 @@
   }  
   /*Passo a passo*/
   .title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--title-fonts);
     color: var(--title-color);
