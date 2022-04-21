@@ -1,0 +1,117 @@
+.members{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .member{
+    margin-bottom: 1.5rem;
+    border: 1px solid #835afd59;
+    border-radius: 5px;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    gap: 0rem;
+    align-items: center;
+    background: var(--body-color);
+    padding: 0.625rem;
+    box-shadow: 0px 0px 07px rgba(0, 0, 0, 0.07);
+    transition: 0.2s;
+  }
+  .member:hover{
+    border: 1px dashed var(--base-color);
+  }
+  .member img{
+    width: 60%;
+    clip-path: circle();
+  }
+  .perfil{
+    display: flex;
+    align-items: center;
+  }
+  .occupation{
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  .social {
+    grid-auto-flow: column;
+    width: fit-content;
+  }
+  .social i {
+    font-size: 1.3rem;
+    color: var(--base-color);
+  }
+  .social a {
+    transition: 0.3s;
+    display: inline-block;
+  }
+  .social a:hover {
+    transform: translateY(-8px);
+  }
+    /***** MEDIA QUERIES *****/
+/*extra large devices: 1200 >*/
+@media(min-width: 1200px){
+    .container {
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: 1fr 1fr;
+    }
+    .section {
+      padding: 10rem 0;
+    }
+    .section header{
+      max-width: 40rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button {
+      height: 3.125rem;
+    }
+    .social{
+        gap: 2rem;
+    }
+    
+  }
+  @media(min-width: 1023px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    #aboutus .text{
+        padding-left: 1.25rem;
+    } 
+    .social{
+        gap: 2rem;
+    }
+  }
+
+  @media(min-width: 992px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    #aboutus .text{
+        padding-left: 1.25rem;
+    } 
+    .social{
+        gap: 2rem;
+    }
+  }
+
+  @media(min-width: 767px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    #aboutus .text{
+        padding-left: 1.25rem;
+    } 
+    .occupation{
+        font-size: 0.6rem;
+    }  
+    .social{
+        gap: 1rem;
+    }
+  }
+
