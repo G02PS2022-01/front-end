@@ -1,0 +1,85 @@
+#cadastro{
+    text-align:center;
+    justify-content: center;
+    padding: 100px 60px;
+}
+
+.formcreate{
+    border: 1px solid #5c41af5d;
+    background: var(--body-color);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.12);
+    border-radius: 5px;
+    
+    padding: 40px 0;
+}
+
+form{
+margin: 20px 30px;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #5c41af99;
+
+    margin: 15px 0;
+    border-radius: 5px;
+    font: 500 12px 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.cadastrar{
+    margin-top: 30px;
+    background: var(--base-color);
+    color: #fff;
+    width: 200px;
+}
+
+.cadastrar:hover{
+    background: #7547fe;
+}
+
+.separador{
+   margin: 0 140px;
+   background: var(--base-color);
+}
+
+#checkbox{
+    width: auto;
+    margin-right: 10px;
+}
+
+
+@media(min-width: 1200px){
+
+    form{
+        margin: 20px 30px;
+    }
+   
+    .formcreate{
+        border: 1px solid #5c41af5d;
+        background: var(--body-color);
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.12);
+        border-radius: 5px;
+       
+        padding: 40px 0;
+    }
+
+    
+}
+@media(min-width: 1023px){
+    form input {
+        font: 500 14px 'Poppins', sans-serif;
+    }
+}
+@media(min-width: 992px){
+    
+}
+
+@media(min-width: 767px){
+    #cadastro {
+        text-align: center;
+        justify-content: center;
+        padding: 10% 30%;
+    }
+}
