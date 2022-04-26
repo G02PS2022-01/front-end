@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './style.css';
 import CardBloqueado from "../../assets/img/Card-Desafios-Bloqueado.png";
 import CardDesloqueado from "../../assets/img/Card-Desafios-Desbloqueado.png";
@@ -7,8 +7,7 @@ import CardDesloqueado from "../../assets/img/Card-Desafios-Desbloqueado.png";
 
 export default function CardDesafios(){
 
-    const [click, setClick] = useState(false);
-
+    const history = useHistory();
 
 
     return (
@@ -18,7 +17,9 @@ export default function CardDesafios(){
                 <div className="cards grid">
                     <div className="card">
                         <i className=""><img src={CardDesloqueado} /></i>
-                        <h3 className="title">Nivel #1</h3>
+                        <button className='btn' onClick={() => history.push('#')}>
+                            <h3 className="title">Nivel #1</h3>
+                        </button>
                         <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </p>
