@@ -25,8 +25,26 @@
   margin-bottom: 0.75rem;
 }
 
-.card .title .btn {
-  padding: 1rem;
-  background: transparent;
+#btn {
+  width:140px;
+  height:60px;
+  background: #835afd;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--base-color);
+}
 
+#btn:hover {
+  background-color: transparent;
+  color: var(--base-color);
+  border-radius: 4px;
+  border: 2px solid var(--text-color);
+}
+
+.card:hover {
+  /* transform: scale(1.1); */
+  transition: 0.5s;
+  box-shadow: 0 0 10px 4px #a2a8b6;
 }
