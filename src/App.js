@@ -9,6 +9,7 @@ import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum'
 import Glossary from './pages/Glossary'
+import Desafios from './pages/Desafios';
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/what-coding" component={WhatCoding} />
-         <Route exact path="/about-us" component={AboutUs} /> 
-         <Route exact path="/curriculum" component={Curriculum} />
-         <Route exact path="/glossary" component={Glossary} />
-         <Route exact path="/sign-in" component={SignIn} />  
+        <Route exact path="/about-us" component={AboutUs} /> 
+        <Route exact path="/curriculum" component={Curriculum} />
+        <Route exact path="/glossary" component={Glossary} />
+        <Route exact path="/sign-in" component={SignIn} />  
+        <Route exact path="/desafios" component={Desafios}/>
       </Switch>
       <IndexFooter />
     </Router>
