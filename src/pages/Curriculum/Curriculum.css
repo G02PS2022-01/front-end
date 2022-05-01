@@ -7,7 +7,11 @@
   padding-left: 1.25rem;
 }
 
+<<<<<<< HEAD
 #sidemenu{
+=======
+#itemmenu{
+>>>>>>> df3c0d519a6ec01aa07db8d5cf397982268c0985
   height: 100%;
   background: #fff;
   border: 1px solid var(--body-color);
@@ -42,7 +46,6 @@
 @media(min-width: 1200px){
   .container {
     max-width: 1120px;
-   
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
