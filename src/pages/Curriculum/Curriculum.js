@@ -46,7 +46,7 @@ export default function Curriculum() {
   }
 
   const handleSelect = (item) => {
-    console.log(item);
+    // console.log(item);
     setItem(item);
   }
   
