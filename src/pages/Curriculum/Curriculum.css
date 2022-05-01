@@ -34,6 +34,9 @@
   margin-bottom: 1.25rem;
 }
 
+.link {
+  color: var(--base-color);
+}
 /***** MEDIA QUERIES *****/
 /*extra large devices: 1200 >*/
 @media(min-width: 1200px){
