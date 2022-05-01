@@ -10,7 +10,7 @@ import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum'
 import Glossary from './pages/Glossary'
 import Login from './pages/Login/Login'
-import Cadastro from './pages/Cadastro/Cadastro'
+import register from './pages/register/Register'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
          <Route exact path="/glossary" component={Glossary} />
          <Route exact path="/sign-in" component={SignIn} />  
          <Route exact path="/cadastro" component={Login} />
-         <Route exact path="/cadastro/new" component={Cadastro} />
+         <Route exact path="/cadastro/new" component={register} />
       </Switch>
       <IndexFooter />
     </Router>
