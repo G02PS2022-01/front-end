@@ -1,69 +1,107 @@
-.containerLogin{
-    height: 100vh;
-    background-color: #E6EAE7;
-    display: flex;
+#login .container {
+    margin: 0;
+  }
+  #login img {
+    display: none;
+  }
+  .login{
+    align-items: center;
     text-align: center;
+    font: 500 var(--subtitle-font-size) var(--title-fonts);
+    width: 500px;
+
+   
+  }
+  a.button{
     justify-content: center;
-    align-items: center;
-    font-family: IBM Plex Sans Thai;
-}
-
-.buttonEmail{
-    text-align: -webkit-center;
-       
-}
-
-.buttonEntrar >a{
-    width: 50%;
-    padding: 5px;
-    background-color: #607EA2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid #607EA2;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: black;    
-    font-family: IBM Plex Sans Thai;
-    font-size: 18px;
-}
-
-.buttonSign >a{
-    width: 50%;
-    padding: 5px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;   
-    font-size: 18px;
-}
-
-.buttonEntrar>a>img{
-    margin-left: 20px;
-    width: 10%;
+    font: 500 var(--subtitle-font-size) var(--title-fonts);
+  }
+  .loginGoogle{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
     
-}
+  }
 
-.buttonSign>a>img{
-    margin-left: 75px;
-    width: 10%;
-}
+  .loginGoogle a i,
+  .loginEmail a i{
+    margin-left: 10px;
+  }
 
-.imageLogin >img{
-    width: 80%;
-    transform: rotate(345deg);
-}
+  
+  .loginGoogle .button{
+    width: -webkit-fill-available;
+    
+  }
+  .loginEmail{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+   
+  }
+  .loginEmail a{
+    width: -webkit-fill-available;
+    
+  }
+  .register{
+    color: var(--text-color);
+   
+  }
 
-.novoUsuario>p{
-    color: black;
-}
+  .register:hover{
+    color: var(--base-color);
+   
+  }
+  .buttongoogle{
+    width: -webkit-fill-available;
+      background-color: #ea4334;
+      color: var(--text-color-light);
+      height: 3.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 2rem;
+      border-radius: 0.25rem;
+      font: 500 1rem var(--body-fonts);
+      justify-content: center;
+      transition: background 0.3s;
+      font-family: 'Poppins', sans-serif;
+  }
+  .buttongoogle:hover{
+    background-color: #e7210f;
 
+  }
+  
+  /***** MEDIA QUERIES *****/
+  /*extra large devices: 1200 >*/
+  @media(min-width: 1200px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
 
-
-
-
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /*extra large devices: 992px >*/
+  @media(min-width: 992px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
