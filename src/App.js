@@ -1,10 +1,9 @@
 import React from 'react'
 import Navbar from './layouts/Navbar/Navbar'
-import Home from './pages/Home-page/Home'
-import About from './pages/About/About'
 import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import IndexFooter from './layouts/Footer/IndexFooter'
+import Home from './pages/Home-page/Home'
 import SignIn from './pages/SignIn';
 import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
