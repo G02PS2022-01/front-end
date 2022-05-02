@@ -9,7 +9,7 @@ export default function Step() {
     <>
     <div className="divider-2"></div>
       <section className="section" id="passos">
-        <div className="container grid">
+        <div className="container">
           <header>
             <h2 className="title">Passo a passo</h2>
             <p>A melhor maneira de começar sua jornada na programação.</p>

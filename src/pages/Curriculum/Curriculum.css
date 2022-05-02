@@ -1,4 +1,4 @@
-.grid {
+.grid-curriculum {
   display: grid;
   grid-template-columns: 30% 70%;
 }
@@ -7,7 +7,7 @@
   padding-left: 1.25rem;
 }
 
-#sidemenu{
+#sidemenu {
   height: 100%;
   background: #fff;
   border: 1px solid var(--body-color);
@@ -40,12 +40,6 @@
 /***** MEDIA QUERIES *****/
 /*extra large devices: 1200 >*/
 @media(min-width: 1200px){
-  .container {
-    max-width: 1120px;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
   .section {
     padding: 10rem 0;
   }
