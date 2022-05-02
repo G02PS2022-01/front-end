@@ -39,6 +39,8 @@
   font-family: 'DM Sans', sans-serif;
 }
 .cards.grid {
+  display: flex;
+  flex-basis: 30;
   gap: 1.5rem;
 }
 .card {
@@ -113,6 +115,7 @@
   }
   .section header {
     text-align: center;
+    
   }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,7 +137,6 @@
 
 /*Mediun devices 767 >*/
 @media(min-width: 767px){
- 
   /*Passo a passo*/
   .section header {
     text-align: center;
