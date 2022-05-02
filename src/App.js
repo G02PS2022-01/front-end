@@ -9,6 +9,7 @@ import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum/Curriculum'
 import Glossary from './pages/Glossary'
+import Desafios from './pages/Desafios';
 import Login from './pages/Login/Login'
 import Cadastro from './pages/Cadastro/Cadastro'
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/curriculum" component={Curriculum} />
         <Route exact path="/glossary" component={Glossary} />
         <Route exact path="/sign-in" component={SignIn} />  
+        <Route exact path="/desafios" component={Desafios}/>
         <Route exact path="/cadastro" component={Login} />
         <Route exact path="/cadastro/new" component={Cadastro} />
       </Switch>
