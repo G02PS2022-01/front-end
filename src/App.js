@@ -24,8 +24,8 @@ function App() {
          <Route exact path="/curriculum" component={Curriculum} />
          <Route exact path="/glossary" component={Glossary} />
          <Route exact path="/sign-in" component={SignIn} />  
-         <Route exact path="/cadastro" component={Login} />
-         <Route exact path="/cadastro/new" component={Register} />
+         <Route exact path="/register" component={Login} />
+         <Route exact path="/Register/new" component={Register} />
       </Switch>
       <IndexFooter />
     </Router>
