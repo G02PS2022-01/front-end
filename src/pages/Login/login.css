@@ -52,6 +52,24 @@
     color: var(--base-color);
    
   }
+  .buttongoogle{
+    width: -webkit-fill-available;
+      background-color: #ea4334;
+      color: var(--text-color-light);
+      height: 3.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 2rem;
+      border-radius: 0.25rem;
+      font: 500 1rem var(--body-fonts);
+      justify-content: center;
+      transition: background 0.3s;
+      font-family: 'Poppins', sans-serif;
+  }
+  .buttongoogle:hover{
+    background-color: #e7210f;
+
+  }
   
   /***** MEDIA QUERIES *****/
   /*extra large devices: 1200 >*/
