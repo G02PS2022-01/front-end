@@ -1,7 +1,7 @@
 import React from 'react';
-import './cadastro.css';
+import './register.css';
 
-const Cadastro = ()=>{
+const Register = ()=>{
     return(
         <section className="section" id="cadastro">
             <div className='formcreate'>
@@ -42,4 +42,4 @@ const Cadastro = ()=>{
     
     )
 }
-export default Cadastro
+export default Register
