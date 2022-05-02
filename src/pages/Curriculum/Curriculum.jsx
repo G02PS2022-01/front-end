@@ -53,7 +53,7 @@ export default function Curriculum() {
   return (
     <>
       <section className="section" id="curriculum">
-        <div className="container grid grid-curriculum">
+        <div className="container grid">
           {/* Sidebar Menu */}
           {SideMenu()}
           {/* Infocomponets */}
