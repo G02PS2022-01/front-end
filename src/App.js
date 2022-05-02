@@ -4,13 +4,13 @@ import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import IndexFooter from './layouts/Footer/IndexFooter'
 import Home from './pages/Home-page/Home'
-import SignIn from './pages/SignIn';
+import SignIn from './pages/SignIn'
 import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum'
 import Glossary from './pages/Glossary'
 import Login from './pages/Login/Login'
-import register from './pages/register/Register'
+import Register from './pages/Register/Register'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
          <Route exact path="/glossary" component={Glossary} />
          <Route exact path="/sign-in" component={SignIn} />  
          <Route exact path="/cadastro" component={Login} />
-         <Route exact path="/cadastro/new" component={register} />
+         <Route exact path="/cadastro/new" component={Register} />
       </Switch>
       <IndexFooter />
     </Router>
