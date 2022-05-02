@@ -7,8 +7,9 @@ import Home from './pages/Home-page/Home'
 import SignIn from './pages/SignIn'
 import WhatCoding from './pages/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
-import Curriculum from './pages/Curriculum'
+import Curriculum from './pages/Curriculum/Curriculum'
 import Glossary from './pages/Glossary'
+import Desafios from './pages/Desafios';
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 
