@@ -1,7 +1,6 @@
 
 import './Home.css';
 import React from 'react';
-// import laptop from '../../assets/img/screen-laptop.svg';
 import laptop from '../../../assets/img/screen-laptop.svg';
 import { Link } from 'react-router-dom';
 
