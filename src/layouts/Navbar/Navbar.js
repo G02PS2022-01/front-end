@@ -16,15 +16,14 @@ function Navbar (){
 
 
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <a class="logo" href="#home">Dog<span>Code</span>.</a>
+            <p className="logo">Dog<span>Code</span>.</p>
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
+          
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-         
-         
             <li className='nav-item'>
               <Link to='/what-coding' className='nav-links' onClick={closeMobileMenu} >
                   O que é Programação?

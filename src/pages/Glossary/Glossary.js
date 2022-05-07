@@ -41,8 +41,8 @@ export default function Glossary() {
       }
     ]
     return (
-      <div className="list ">
-        <ul id="sidemenu">
+      <div className="list">
+        <ul id="itemmenu">
           <div>
             <h2 className="title">Dicionário</h2>
           </div>
@@ -71,8 +71,8 @@ export default function Glossary() {
 
   return (
     <>
-      <section className="section container " id="glossary">
-        <div className="containerGlossary grid">
+      <section className="section " id="glossary">
+        <div className="containerGlossary container grid">
           {/* Sidebar Menu */}
           {SideMenu()}
           {/* Infocomponets */}
