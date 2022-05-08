@@ -1,7 +1,15 @@
 import React from 'react'
 import './AboutUs.css'
 import '../../assets/icon/style.css'
-import padrao from '../../assets/img/padrao.jpg'
+
+import amauri from '../../assets/img/amauri.png'
+import antonio from '../../assets/img/antonio.jpeg'
+import vini from '../../assets/img/vini.jpeg'
+import wanderson from '../../assets/img/wanderson.jpg'
+import gustavo from '../../assets/img/gustavo.jpeg'
+import marcos from '../../assets/img/marcos.jpg'
+import nicolas from '../../assets/img/nicolas.jpeg'
+
 
 export default function AboutUs() {
   return (
@@ -30,114 +38,101 @@ export default function AboutUs() {
         <div className="members">
           <div className="member grid">
             <div className="perfil">
-              <img src={padrao} />
+              <img src={antonio} />
             </div>
             <div>
-              <p className="subtitle">Antonio</p>
+              <p className="subtitle">Antônio Arieiro</p>
               <p className="occupation">back-end developer</p>
             </div>
             <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://www.instagram.com/a.arieirojr/"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/antonio-arieiro-50a9301b2/"><i className="icon-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/antonioarieiro"><i className="icon-github"></i></a>
             </div>
           </div>
           <div className="member grid">
             <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
+              <img src={amauri} />
             </div>
             <div>
-              <p className="subtitle">Amaury</p>
+              <p className="subtitle">Amauri Junior</p>
+              <p className="occupation">front-end developer</p>
+            </div>
+            <div className="social grid">
+              <a target="_blank" href="https://www.instagram.com/amaur1mmj/"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/amaur1mmj"><i className="icon-github"></i></a>
+            </div>
+          </div>
+          
+          <div className="member grid">
+            <div className="perfil">
+              <img src={gustavo} />
+            </div>
+            <div>
+              <p className="subtitle">Gustavo Cascaes</p>
               <p className="occupation">front-end developer</p>
             </div>
             <div className="social grid">
               <a target="_blank" href="#"><i className="icon-instagram"></i></a>
               <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://github.com/Zokyn"><i className="icon-github"></i></a>
             </div>
           </div>
           <div className="member grid">
             <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
+              <img src={marcos}/>
             </div>
             <div>
-              <p className="subtitle">Gabriel</p>
-              <p className="occupation">back-end developer</p>
-            </div>
-            <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
-            </div>
-          </div>
-          <div className="member grid">
-            <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
-            </div>
-            <div>
-              <p className="subtitle">Gustavo</p>
+              <p className="subtitle">Marcos Costa</p>
               <p className="occupation">front-end developer</p>
             </div>
             <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://www.instagram.com/marcos.costafilho/"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/marcos-antonio-costa-filho-32805b226"><i className="icon-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/marcos1079"><i className="icon-github"></i></a>
             </div>
           </div>
           <div className="member grid">
             <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
+              <img src={nicolas} />
             </div>
             <div>
-              <p className="subtitle">Marcos</p>
+              <p className="subtitle">Nicolas Ribeiro</p>
               <p className="occupation">front-end developer</p>
             </div>
             <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="https://www.instagram.com/_nicolasarthur_/"><i className="icon-instagram"></i></a>
               <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://github.com/nicolasarthur10"><i className="icon-github"></i></a>
             </div>
           </div>
           <div className="member grid">
             <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
+              <img src={vini} />
             </div>
             <div>
-              <p className="subtitle">Nicolas</p>
-              <p className="occupation">front-end developer</p>
-            </div>
-            <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
-            </div>
-          </div>
-          <div className="member grid">
-            <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
-            </div>
-            <div>
-              <p className="subtitle">Vinicius</p>
+              <p className="subtitle">Vinicius Oliveira</p>
               <p className="occupation">fullstack developer</p>
             </div>
             <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://www.instagram.com/_viniciusoliveira0101/"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/vinicius-de-oliveira-oliveira/"><i className="icon-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/vinnieoh"><i className="icon-github"></i></a>
             </div>
           </div>
           <div className="member grid">
             <div className="perfil">
-              <img src="./img/Foto_Perfil.jpg" />
+              <img src={wanderson} />
             </div>
             <div>
-              <p className="subtitle">Wanderson</p>
+              <p className="subtitle">Wanderson Bueno</p>
               <p className="occupation">front-end developer</p>
             </div>
             <div className="social grid">
-              <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-              <a target="_blank" href="#"><i className="icon-linkedin"></i></a>
-              <a target="_blank" href="#"><i className="icon-github"></i></a>
+              <a target="_blank" href="https://www.instagram.com/wandersonnbueno/"><i className="icon-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/wanderson-bueno"><i className="icon-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/wandbueno/"><i className="icon-github"></i></a>
             </div>
           </div>
         </div>
