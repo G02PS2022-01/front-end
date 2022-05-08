@@ -26,8 +26,6 @@
   transform: translateY(0);
 }
 
-
-
 .title {
   font-size: 1.875rem;
   font-weight: 700;
@@ -65,12 +63,6 @@
 /***** MEDIA QUERIES *****/
 /*extra large devices: 1200 >*/
 @media(min-width: 1200px){
-  .container {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
   .section header{
     max-width: 40rem;
     text-align: center;
@@ -82,7 +74,7 @@
   }
   /*Passo a passo*/
   .title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--title-fonts);
     color: var(--title-color);
@@ -105,7 +97,7 @@
   }  
   /*Passo a passo*/
   .title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--title-fonts);
     color: var(--title-color);
@@ -113,6 +105,7 @@
   }
   .section header {
     text-align: center;
+    
   }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,7 +127,6 @@
 
 /*Mediun devices 767 >*/
 @media(min-width: 767px){
- 
   /*Passo a passo*/
   .section header {
     text-align: center;
