@@ -1,0 +1,39 @@
+#what-coding {
+  background: white;
+}
+#what-coding .container {
+  margin: 0;
+}
+#what-coding .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#what-coding .title{
+  font-size: 1.5rem;
+
+}
+
+/***** MEDIA QUERIES *****/
+/*extra large devices: 1200 >*/
+@media(min-width: 1200px){
+ 
+}
+
+/*large devices:1023 >*/
+@media(min-width: 1023px){
+ 
+}
+
+/*large devices: 992 >*/
+@media(min-width: 992px){
+  
+}
+
+/*Mediun devices 767 >*/
+@media(min-width: 767px){
+ 
+}
+
+
+
