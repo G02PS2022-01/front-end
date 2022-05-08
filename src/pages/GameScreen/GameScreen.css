@@ -1,0 +1,154 @@
+.container-game-screen{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+}
+aside {
+  height: 100vh;
+  
+  color: #fff;
+  display: grid;
+}
+.aside-inicio-game{
+  background-color: #000;
+  padding: 1.25rem;
+}
+.aside-final-game{
+  background-color: #835AFD;
+  text-transform: uppercase;
+}
+.aside-inicio-game h2{
+  font-size: 1rem;
+}
+.aside-inicio-game h3{
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.central-game-screen{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-nivel{
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-nivel a{
+  font: 600 1.5rem 'Poppins', sans-serif;
+  color: #0f241d
+}
+.container-nivel a span{
+  color: #835AFD
+}
+.central-game-screen header{
+  background-color: rgb(247, 247, 247);
+  border-bottom: 1px solid rgb(228, 227, 227);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.10);
+}
+
+.button-sair{
+  background-color: #835AFD;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 0px;
+  color: #fff;
+}
+.central-game-screen footer{
+  background-color: #c3ced8
+}
+.central-game-screen textarea{
+  width: -webkit-fill-available;
+  height: 60vh;
+  padding: 0.5rem 1rem;
+  border: 0px;
+  border-style: dashed;
+  background-color:rgb(228, 227, 227);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.aside-solucao{
+  border-bottom: 1px solid #ccc;
+}
+.aside-solucao h2{
+  padding: 1.25rem;
+}
+.aside-outro h2{
+  padding: 1.25rem;
+}
+.button-executar{
+  background-color: #35c733;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 0px;
+  margin: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-game-screen form{
+  margin: 0 0.5rem;
+}
+footer{
+  padding: 2.5rem
+}
+.header-gamer-min{
+  display: none;
+}
+.header-gamer-full{
+  display: block;
+}
+
+/*Mediun devices 767 <*/
+@media(max-width: 1023px){
+  .container-game-screen{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+/*Mediun devices 767 <*/
+@media(max-width: 767px){
+  .container-game-screen{
+    display: flex;
+    flex-direction: column;
+  }
+  .header-gamer-min{
+    display: block;
+  }
+  .header-gamer-full{
+    display: none;
+  }
+  .aside-inicio-game{
+    height: auto;
+    padding: 2.5rem auto;
+  }
+  .aside-inicio-game div{
+    padding: 1rem 0;
+  }
+  .aside-final-game{
+    height: auto;
+    padding: 2.5rem auto;
+  }
+  .aside-final-game div{
+    padding: 1rem 0;
+  }
+  .central-game-screen{
+    height: auto;
+  }
+  .central-game-screen textarea{
+    height: 30vh;
+    margin-top: 1rem;
+  }
+  .button-executar{
+    display: block;
+    font-size: 15px;
+  }
+  .aside-inicio-game h2 {
+    text-transform: uppercase;
+}
+}
+
