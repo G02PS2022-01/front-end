@@ -17,3 +17,7 @@ Aprenda habilidades que abrirão portas
 
    Faça coisas legais
         Sempre quis fazer um aplicativo ou um site? Código faz isso. Também pode ajudá-lo a automatizar uma planilha ou criar novas ferramentas para sua comunidade. Aprender a codificar torna possível imaginar as coisas que você quer fazer e realmente construí-las.
+
+  Divirta-se muito
+
+Você já conheceu um programador que se arrependeu de aprender a programar? Provavelmente não, porque aprender a codificar é divertido e empoderador! A codificação também abre uma nova comunidade e rede para você. Na verdade, ouvimos o termo "viciante" regularmente.

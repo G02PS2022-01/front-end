@@ -14,9 +14,25 @@
 
 }
 
+
+
+
 /***** MEDIA QUERIES *****/
 /*extra large devices: 1200 >*/
 @media(min-width: 1200px){
+
+  .pr-bloco{
+
+
+  }
+  .sd-bloco{
+  
+    
+  }
+  .tr-bloco{
+  
+    
+  }
  
 }
 
