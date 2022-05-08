@@ -14,14 +14,14 @@ const Login = ()=>{
             <div className="login">
               
               <div className="loginGoogle">
-                <a className="button" href="#"
+                <a className="buttongoogle" href="#"
                   >Entrar com Google <i className="icon-google"></i></a>
               </div>
               <div className="loginEmail">
                 <a className="button" href="#"
                   >Sign in E-mail <i className="icon-gmail"></i></a>
               </div>
-              <a href="#" className="register">Cadastrar usando E-mail</a>
+              <a href="/cadastro/new" className="register">Cadastrar usando E-mail</a>
 
             </div>
           </div>
