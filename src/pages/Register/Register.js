@@ -1,8 +1,12 @@
 import React from 'react';
 import './register.css';
+import { DogContext } from '../../DogCodeContext/DogContext';
 
 const Register = ()=>{
+    const { openModal } = React.useContext(DogContext)
+
     return(
+        
         <section className="section" id="cadastro">
             <div className='formcreate'>
                 <h2>Criando sua conta</h2><hr className='separador'/>
@@ -34,7 +38,7 @@ const Register = ()=>{
                 </p>
 
                 <p>
-                    Já é cadastrado? <a href='#'>Cliqe aqui</a>
+                    Já é cadastrado? <a href='#' onClick={openModal}>Clique aqui</a>
                 </p>
                 </form>
             </div>

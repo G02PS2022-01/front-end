@@ -12,11 +12,20 @@ import Glossary from './pages/Glossary/Glossary'
 //import Desafios from "./pages/Desafios";
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
+import {DogProvider} from './DogCodeContext/DogProvider'
+import {DogContext} from './DogCodeContext/DogContext'
+import PopUpLogin from './components/PopUpLogin/PopUpLogin'
 import GameScreen from './pages/GameScreen/GameScreen'
 
-function App() {
+
+
+function Main() {
+  const{modalOn}= React.useContext(DogContext)
   return (
+    
     <Router>
+    <PopUpLogin/>
+    <div className={modalOn ?'opacity-10':''}>  
       <Navbar />
       <Switch>
         <Route exact path="/" component={Homepage} />
@@ -30,8 +39,17 @@ function App() {
         <Route exact path="/game-screen" component={GameScreen} />
       </Switch>
       <Footer />
+    </div>
     </Router>
-  )
+    
+  );
 }
+function App(){
+  return(
+    <DogProvider>
+    <Main/>
+    </DogProvider>
+  )
 
+}
 export default App
