@@ -1,0 +1,82 @@
+.grid-curriculum {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+#all h2{
+  padding-left: 1.25rem;
+}
+
+#sidemenu {
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--body-color);
+  border-radius: .5rem;
+  padding: 1.25rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+}
+#sidemenu li{
+  margin-bottom: 0.625rem;
+}
+#sidemenu li a:hover{
+  color: var(--base-color);
+  font-weight: 600;
+}
+#sidemenu li a.active{
+  color: var(--base-color);
+  font-weight: 600;
+}
+.meaning{
+  background: #fff;
+  padding: 1.25rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0.5rem 0.5rem 0.5rem; 
+  margin-bottom: 1.25rem;
+}
+
+.link {
+  color: var(--base-color);
+}
+/***** MEDIA QUERIES *****/
+/*extra large devices: 1200 >*/
+@media(min-width: 1200px){
+  .section {
+    padding: 10rem 0;
+  }
+
+  #glossary .list {
+    order: 0;
+    width: 20rem;
+  }
+  #glossary .meaning {
+    order: 1;
+  }
+
+  #all h2 {
+    padding-left: 0rem;
+  }
+}
+
+/*large devices:1023 >*/
+@media(min-width: 1023px){
+  .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .section {
+    padding: 10rem 1.5rem;
+  }
+
+  #glossary .list {
+    order: 0;
+    width: 20rem;
+  }
+  #glossary .meaning {
+    order: 1;
+  }
+
+  #all h2 {
+    padding-left: 0rem;
+  }
+}

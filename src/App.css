@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.what-coding {
+  margin-top: 120px;
+}
+.glossary {
+
+  margin-top: 120px;
+}
+.sign-in {
+
+  margin-top: 120px;
+}
+.about-us {
+  margin-top: 120px;
+}
+.curriculum {
+  margin-top:120px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: #835AFD;
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: #5c41af;
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  /* fonts
+  --title-font-size: 1.875rem; */
+  --subtitle-font-size: 1rem;
+
+  --title-fonts: 'Poppins', sans-serif;
+  --body-fonts: 'DM Sans', sans-serif;
+}
+/*************** BASE ****************/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-fonts);
+  transition: background 0.3s;
+}
+.button a{
+  color: #fff
+}
+.button:hover {
+  background: var(--base-color-alt);
+}
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(270deg, #835afd64, rgba(131, 90, 253, 0.182));
+}
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(270deg, rgba(131, 90, 253, 0.182), #835afd64);
+}
+
+/*************** LAYOUT ****************/
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+  width: 100%;
+}
+#header.scroll {
+   /* background: var(--base-color);  */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+/* 
+#header.scroll .logo span {
   color: white;
 }
+#header.scroll .icon-menu {
+  color: white;
+} */
 
-.App-link {
-  color: #61dafb;
+/*************** CONTAINER ****************/
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.section {
+  padding: calc(5rem + var(--header-height)) 0;
+}
+.section .title {
+  margin-bottom: 1rem;
+}
+.section .subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/*************** HEADER ****************/
+.section header {
+  margin-bottom: 4rem;
+}
+.section header strong {
+  color: var(--base-color);
+}
+.title strong {
+  color: var(--base-color);
+}
+
+@media (min-width: 1200px){
+  .container {
+    padding: 0 5%;
   }
 }

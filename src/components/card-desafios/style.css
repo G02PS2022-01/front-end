@@ -1,0 +1,53 @@
+.cards.grid {
+  gap: 1.5rem;
+}
+  
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+}
+  
+.card i {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+.card i img {
+  width: 30%;
+}
+  
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#btn {
+  width:140px;
+  height:60px;
+  background: #835afd;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--base-color);
+}
+
+/*
+#btn:hover {
+  background-color: transparent;
+  color: var(--base-color);
+  border-radius: 4px;
+  border: 2px solid var(--text-color);
+}
+*/
+
+.card:hover {
+  /* transform: scale(1.1); */
+  transition: 0.5s;
+  box-shadow: 0 0 10px 4px #a2a8b6;
+}

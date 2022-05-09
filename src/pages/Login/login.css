@@ -1,0 +1,107 @@
+#login .container {
+    margin: 0;
+  }
+  #login img {
+    display: none;
+  }
+  .login{
+    align-items: center;
+    text-align: center;
+    font: 500 var(--subtitle-font-size) var(--title-fonts);
+    width: 500px;
+
+   
+  }
+  a.button{
+    justify-content: center;
+    font: 500 var(--subtitle-font-size) var(--title-fonts);
+  }
+  .loginGoogle{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  .loginGoogle a i,
+  .loginEmail a i{
+    margin-left: 10px;
+  }
+
+  
+  .loginGoogle .button{
+    width: -webkit-fill-available;
+    
+  }
+  .loginEmail{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+   
+  }
+  .loginEmail a{
+    width: -webkit-fill-available;
+    
+  }
+  .register{
+    color: var(--text-color);
+   
+  }
+
+  .register:hover{
+    color: var(--base-color);
+   
+  }
+  .buttongoogle{
+    width: -webkit-fill-available;
+      background-color: #ea4334;
+      color: var(--text-color-light);
+      height: 3.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 2rem;
+      border-radius: 0.25rem;
+      font: 500 1rem var(--body-fonts);
+      justify-content: center;
+      transition: background 0.3s;
+      font-family: 'Poppins', sans-serif;
+  }
+  .buttongoogle:hover{
+    background-color: #e7210f;
+
+  }
+  
+  /***** MEDIA QUERIES *****/
+  /*extra large devices: 1200 >*/
+  @media(min-width: 1200px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
+
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /*extra large devices: 992px >*/
+  @media(min-width: 992px){
+  
+    #login img {
+      position: relative;
+      display: block;
+      width: 80%;
+    }
+    #login .container {
+      margin: 0 auto;
+      justify-content: space-between;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
