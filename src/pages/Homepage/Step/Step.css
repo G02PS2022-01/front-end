@@ -54,6 +54,7 @@
 }
 .card i img {
   width: 30%;
+  display: initial;
 }
 .card .title {
   font-size: 1.5rem;
