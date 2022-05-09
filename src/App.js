@@ -1,29 +1,31 @@
-import React from "react";
-import Navbar from "./layouts/Navbar/Navbar";
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./layouts/Footer/Footer";
-import Homepage from "./pages/Homepage/Homepage";
-import SignIn from "./pages/SignIn";
-import WhatCoding from "./pages/WhatCoding/WhatCoding";
-import AboutUs from "./pages/About/AboutUs";
-import Curriculum from "./pages/Curriculum/Curriculum";
-import Glossary from "./pages/Glossary/Glossary";
+import React from 'react'
+import Navbar from './layouts/Navbar/Navbar'
+import './App.css'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Footer from './layouts/Footer/Footer'
+import Homepage from './pages/Homepage/Homepage'
+import SignIn from './pages/SignIn'
+import WhatCoding from './pages/WhatCoding/WhatCoding'
+import AboutUs from './pages/About/AboutUs'
+import Curriculum from './pages/Curriculum/Curriculum'
+import Glossary from './pages/Glossary/Glossary'
 //import Desafios from "./pages/Desafios";
-import Login from "./pages/Login/Login";
-import Register from "./pages/Register/Register";
-import {DogProvider} from "./DogCodeContext/DogProvider";
-import PopUpLogin from "./components/PopUpLogin/PopUpLogin"
+import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
+import {DogProvider} from './DogCodeContext/DogProvider'
+import {DogContext} from './DogCodeContext/DogContext'
+import PopUpLogin from './components/PopUpLogin/PopUpLogin'
+import GameScreen from './pages/GameScreen/GameScreen'
 
 
 
-
-function App() {
+function Main() {
+  const{modalOn}= React.useContext(DogContext)
   return (
-    <DogProvider>
     
     <Router>
     <PopUpLogin/>
+    <div className={modalOn ?'opacity-10':''}>  
       <Navbar />
       <Switch>
         <Route exact path="/" component={Homepage} />
@@ -34,11 +36,20 @@ function App() {
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/register" component={Login} />
         <Route exact path="/Register/new" component={Register} />
+        <Route exact path="/game-screen" component={GameScreen} />
       </Switch>
       <Footer />
+    </div>
     </Router>
-    </DogProvider>
+    
   );
 }
+function App(){
+  return(
+    <DogProvider>
+    <Main/>
+    </DogProvider>
+  )
 
-export default App;
+}
+export default App
