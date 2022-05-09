@@ -12,10 +12,18 @@ import Glossary from "./pages/Glossary/Glossary";
 //import Desafios from "./pages/Desafios";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import {DogProvider} from "./DogCodeContext/DogProvider";
+import PopUpLogin from "./components/PopUpLogin/PopUpLogin"
+
+
+
 
 function App() {
   return (
+    <DogProvider>
+    
     <Router>
+    <PopUpLogin/>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Homepage} />
@@ -29,6 +37,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
+    </DogProvider>
   );
 }
 
