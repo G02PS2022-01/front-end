@@ -20,8 +20,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject",
+    "lint": "eslint src/**/*.js",
+    "lint:ci": "eslint src/**/*.js --max-warnings=0",
+    "lint:fix": "eslint --fix src/**/*.js",
+    "deploy": "gh-pages -d build -m '[ci skip] Updates'"
   },
   "eslintConfig": {
     "extends": [
