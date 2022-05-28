@@ -15,11 +15,7 @@ export default function CardDesafios(){
     return (
         <>
         <section className="section" id="passos">
-<<<<<<< HEAD
-            <div className="container">
-=======
             <div className="container ">
->>>>>>> develop
                 <header>
                     <h2 class="title">Desafios de Programação</h2>
                 </header>
