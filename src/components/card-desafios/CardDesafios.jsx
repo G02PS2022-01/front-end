@@ -15,7 +15,7 @@ export default function CardDesafios(){
     return (
         <>
         <section className="section" id="passos">
-            <div className="container grid">
+            <div className="container">
                 <header>
                     <h2 class="title">Desafios de Programação</h2>
                 </header>
