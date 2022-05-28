@@ -5,13 +5,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from './layouts/Footer/Footer'
 import Homepage from './pages/Homepage/Homepage'
 import SignIn from './pages/SignIn'
-import WhatCoding from './pages/WhatCoding'
+import WhatCoding from './pages/WhatCoding/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum/Curriculum'
 import Glossary from './pages/Glossary/Glossary'
-import Desafios from './pages/Desafios'
+//import Desafios from "./pages/Desafios";
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
+import GameScreen from './pages/GameScreen/GameScreen'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/register" component={Login} />
         <Route exact path="/Register/new" component={Register} />
+        <Route exact path="/game-screen" component={GameScreen} />
       </Switch>
       <Footer />
     </Router>
