@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button} from '../../components/Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import {ButtonLogado} from '../../components/Button-Logado/Button-Logado';
+import {ButtonLogado} from '../../components/Button-Logado/ButtonLogado';
 
 function Navbar (){
     const [click, setClick] = useState(false);

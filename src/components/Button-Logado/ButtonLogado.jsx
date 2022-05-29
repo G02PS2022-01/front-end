@@ -7,7 +7,6 @@ import DogIcon from "../../assets/img/dog-icon-navbar.png";
 export function ButtonLogado() {
 
   const [isActive, setIsActive] = useState(false)
-  const [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
