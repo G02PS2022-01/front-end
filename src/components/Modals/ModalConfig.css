@@ -74,4 +74,10 @@
   .titleCloseBtn button {
    display: block
   }
+  .titleCloseBtn{
+    display: block
+  }
+  .containerConfig button{
+    display: block
+  }
 }
