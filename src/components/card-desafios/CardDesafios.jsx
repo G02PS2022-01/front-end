@@ -20,7 +20,7 @@ export default function CardDesafios(){
                     <h2 class="title">Desafios de Programação</h2>
                 </header>
                 <div className="cards grid">
-                    <div className="card" onClick={() => history.push('\Curriculum')}>
+                    <div className="card" onClick={() => history.push('#')}>
                         <i className=""><img src={CardDesloqueado}/></i>
                         <button id='btn'>
                             <h3 className="title">Nivel #1</h3>
@@ -29,7 +29,7 @@ export default function CardDesafios(){
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </p>
                     </div>
-                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('\Curriculum');}} >
+                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('#');}} >
                         <i className=""><img src={(nivel >= 2) ? CardDesloqueado: CardBloqueado}/></i>
                         <button id='btn'>
                             <h3 className="title">Nivel #2</h3>
@@ -38,7 +38,7 @@ export default function CardDesafios(){
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </p>
                     </div>
-                    <div className="card" onClick={() => { if(nivel >= 3) valor && history.push('\Curriculum');}}>
+                    <div className="card" onClick={() => { if(nivel >= 3) valor && history.push('#');}}>
                         <i className=""><img src={(nivel >= 3) ? CardDesloqueado: CardBloqueado}/></i>
                         <button id='btn' >
                             <h3 className="title">Nivel #3</h3>
