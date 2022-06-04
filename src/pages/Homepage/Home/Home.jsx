@@ -21,7 +21,7 @@ export default function Home() {
               Aprenda conceitos que se aplicam a qualquer linguagem de programação
             </p>
             <br />
-            <Link className="button" to='/'> 
+            <Link className="button" to='/register'> 
               Começar agora
             </Link>
           </div>
