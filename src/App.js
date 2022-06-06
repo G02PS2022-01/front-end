@@ -13,6 +13,7 @@ import Glossary from './pages/Glossary/Glossary'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import GameScreen from './pages/GameScreen/GameScreen'
+import NivelUm from './pages/Nivel/NivelDois';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/register" component={Login} />
         <Route exact path="/register/new" component={Register} />
         <Route exact path="/game-screen" component={GameScreen} />
+        <Route exact path="/nivel-um" component={NivelUm} />
       </Switch>
       <Footer />
     </Router>

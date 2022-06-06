@@ -9,7 +9,7 @@ export default function CardDesafios(){
 
     const history = useHistory();
 
-    const nivel = 1;
+    const nivel = 2;
     const valor = true;
 
     return (
@@ -29,7 +29,7 @@ export default function CardDesafios(){
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </p>
                     </div>
-                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('#');}} >
+                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('/nivel-um');}} >
                         <i className=""><img src={(nivel >= 2) ? CardDesloqueado: CardBloqueado}/></i>
                         <button id='btn'>
                             <h3 className="title">Nivel #2</h3>
