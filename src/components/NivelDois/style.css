@@ -1,21 +1,19 @@
 .body-text {
     padding: 4.3rem;
-    display: flex;
+    
     flex-wrap: wrap;
 }
 
 
-.left-link {
-    margin: 0 15px;
-    padding-left: 4rem;
+.links-div {
+    display: flex;
+    justify-content: space-between;
 }
 
-.right-link {
-    margin: 10 15px;
-    padding-left: 20rem;
+.links-left, .links-right{
+    display: flex;
+    align-items: center;
 }
-
-
 
 
 

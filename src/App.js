@@ -9,7 +9,7 @@ import WhatCoding from './pages/WhatCoding/WhatCoding'
 import AboutUs from './pages/About/AboutUs'
 import Curriculum from './pages/Curriculum/Curriculum'
 import Glossary from './pages/Glossary/Glossary'
-//import Desafios from "./pages/Desafios";
+import Desafios from "./pages/Desafios";
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import GameScreen from './pages/GameScreen/GameScreen'
@@ -29,6 +29,7 @@ function App() {
         <Route exact path="/register" component={Login} />
         <Route exact path="/register/new" component={Register} />
         <Route exact path="/game-screen" component={GameScreen} />
+        <Route exact path="/desafios" component={Desafios} />
         <Route exact path="/nivel-um" component={NivelUm} />
       </Switch>
       <Footer />

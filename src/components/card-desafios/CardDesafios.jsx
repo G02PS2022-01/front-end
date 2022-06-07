@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import './style.css';
 import CardBloqueado from "../../assets/img/Card-Desafios-Bloqueado.png";
 import CardDesloqueado from "../../assets/img/Card-Desafios-Desbloqueado.png";
+import { LockKey, Dog } from "phosphor-react";
 
 
 export default function CardDesafios(){
@@ -21,7 +22,7 @@ export default function CardDesafios(){
                 </header>
                 <div className="cards grid">
                     <div className="card" onClick={() => history.push('#')}>
-                        <i className=""><img src={CardDesloqueado}/></i>
+                        <i className=""><Dog size={120} /></i>
                         <button id='btn'>
                             <h3 className="title">Nivel #1</h3>
                         </button>
@@ -30,7 +31,7 @@ export default function CardDesafios(){
                         </p>
                     </div>
                     <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('/nivel-um');}} >
-                        <i className=""><img src={(nivel >= 2) ? CardDesloqueado: CardBloqueado}/></i>
+                        <i className="">{(nivel >= 2) ? <Dog size={120} /> :<LockKey size={120} />}</i>
                         <button id='btn'>
                             <h3 className="title">Nivel #2</h3>
                         </button>
@@ -39,7 +40,7 @@ export default function CardDesafios(){
                         </p>
                     </div>
                     <div className="card" onClick={() => { if(nivel >= 3) valor && history.push('#');}}>
-                        <i className=""><img src={(nivel >= 3) ? CardDesloqueado: CardBloqueado}/></i>
+                        <i className="">{(nivel >= 3) ? <Dog size={120} /> :<LockKey size={120} />}</i>
                         <button id='btn' >
                             <h3 className="title">Nivel #3</h3>
                         </button>
