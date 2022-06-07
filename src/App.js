@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/glossary" component={Glossary} />
         <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/register" component={Login} />
-        <Route exact path="/Register/new" component={Register} />
+        <Route exact path="/register/new" component={Register} />
         <Route exact path="/game-screen" component={GameScreen} />
         <Route exact path="/desafios" component={Desafios} />
         <Route exact path="/nivel-um" component={NivelUm} />

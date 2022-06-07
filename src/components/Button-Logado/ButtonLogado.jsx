@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './style.css';
 import DogIcon from "../../assets/img/dog-icon-navbar.png";
-import ModalConfig from '../../components/Modals/ModalConfig'
-import ModalBugs from '../Modals/ModalBugs/ModalBugs';
+import ModalConfig from '../../components/Modals/ModalConfig/ModalConfig'
+import ModalBugs from '../../components/Modals/ModalBugs/ModalBugs';
 
 export function ButtonLogado() {
 
