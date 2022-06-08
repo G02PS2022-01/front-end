@@ -1,8 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './style.css';
-import CardBloqueado from "../../assets/img/Card-Desafios-Bloqueado.png";
-import CardDesloqueado from "../../assets/img/Card-Desafios-Desbloqueado.png";
 import { LockKey, Dog } from "phosphor-react";
 
 
@@ -30,7 +28,7 @@ export default function CardDesafios(){
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </p>
                     </div>
-                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('/nivel-um');}} >
+                    <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('/nivel-dois');}} >
                         <i className="">{(nivel >= 2) ? <Dog size={120} /> :<LockKey size={120} />}</i>
                         <button id='btn'>
                             <h3 className="title">Nivel #2</h3>
