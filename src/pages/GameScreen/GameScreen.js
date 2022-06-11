@@ -1,7 +1,69 @@
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios';
 import './GameScreen.css'
 
 export default function GameScreen() {
+
+  const [codigo, setCodigo] = useState('');
+  
+
+
+  const executa_codigo = () => {
+    const source = codigo;
+
+    axios({
+      method: "POST",
+      url: "https://judge0.p.rapidapi.com/submissions",
+      params: {base64_encoded: 'true', fields: '*'},
+      headers: {
+        "content-type": "application/json",
+        'Content-Type': 'application/json',
+        "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
+        "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
+      },
+      data: {
+        language_id: 75,
+        source_code: source,
+        stdin: "SnVkZ2Uw",
+      },
+    })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      }
+    );
+
+    getRequestCodigo()
+  }
+
+  const getRequestCodigo = (dataReq)=> {
+
+    const url = "https://judge0.p.rapidapi.com/submissions/" + dataReq;
+
+    axios({
+      method: "GET",
+      url: url,
+      params: {base64_encoded: 'true', fields: '*'},
+      headers: {
+        "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
+        "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
+      },
+    })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+  }
+
+  const chama_api = (e)=>{
+    e.preventDefault()
+  }
+
   return (
     <>
       <main className="container-game-screen">
@@ -48,13 +110,18 @@ export default function GameScreen() {
             </nav>
           </header>
           <div className="form-game-screen">
-            <form>
+            <form onSubmit={chama_api}>
               <textarea
                 id="story"
                 name="story"
                 placeholder="Digite a solução aqui"
+                onChange={(e) =>{
+                  setCodigo(e.target.value)
+                }}
               ></textarea>
-              <button className="button-executar">Executar código</button>
+              <button onClick={()=>{
+                  executa_codigo()
+              }} className="button-executar">Executar código</button>
             </form>
           </div>
 
