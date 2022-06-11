@@ -23,7 +23,7 @@ export const DogProvider = ({ children }) => {
           "email": `${email}`,
           "password": `${password}`
         }).then((res) => {
-         console.log(res)
+         console.log(res.data)
          // resultado do post
         })
         .catch((err) => console.log(err))
@@ -40,8 +40,7 @@ export const DogProvider = ({ children }) => {
         "password": `${password}`
       })
       .then((response) => {
-        setTraits(response.data.collectionInfo);
-        setTraitsFetching(false);
+      console.log(response.data)
       })
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
