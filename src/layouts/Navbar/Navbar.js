@@ -95,7 +95,6 @@ function Navbar() {
         ) : (
           <li>
             <Link
-              to="/sign-up"
               className="nav-links-mobile openModalBtn"
               onClick={() => {
                 setModalLoginOpen(true)
