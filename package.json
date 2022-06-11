@@ -16,7 +16,6 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "react-syntax-highlighter": "^15.5.0",
-    "scrollreveal": "^4.0.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
