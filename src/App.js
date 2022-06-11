@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { DogProvider } from "./DogCodeContext/DogProvider";
 import Navbar from './layouts/Navbar/Navbar'
 import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -16,6 +17,7 @@ import GameScreen from './pages/GameScreen/GameScreen'
 
 function App() {
   return (
+    <DogProvider>
     <Router>
       <Navbar />
       <Switch>
@@ -31,6 +33,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
+    </DogProvider>
   )
 }
 
