@@ -8,7 +8,7 @@ export default function CardDesafios(){
 
     const history = useHistory();
 
-    const nivel = 2;
+    const nivel = 3;
     const valor = true;
 
     return (
@@ -25,7 +25,9 @@ export default function CardDesafios(){
                             <h3 className="title">Nivel #1</h3>
                         </button>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        <br/>
+                        Tipos de dados e Operadores
+                        <br/>
                         </p>
                     </div>
                     <div className="card" onClick={() => { if(nivel >= 2) valor && history.push('/nivel-dois');}} >
@@ -34,16 +36,20 @@ export default function CardDesafios(){
                             <h3 className="title">Nivel #2</h3>
                         </button>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        <br/>
+                        If- else- switch
+                        <br/>
                         </p>
                     </div>
-                    <div className="card" onClick={() => { if(nivel >= 3) valor && history.push('#');}}>
+                    <div className="card" onClick={() => { if(nivel >= 3) valor && history.push('/nivel-tres');}}>
                         <i className="">{(nivel >= 3) ? <Dog size={120} /> :<LockKey size={120} />}</i>
                         <button id='btn' >
                             <h3 className="title">Nivel #3</h3>
                         </button>
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        <br/>
+                        Laços de repetição
+                        <br/>
                         </p>
                     </div>
                 </div>

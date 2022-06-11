@@ -1,0 +1,17 @@
+.body-text {
+    padding: 4.3rem;
+    
+    flex-wrap: wrap;
+}
+
+
+.links-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-left, .links-right{
+    display: flex;
+    align-items: center;
+}
+
