@@ -1,0 +1,32 @@
+.body-text {
+    padding: 4.3rem;
+    
+    flex-wrap: wrap;
+}
+
+
+.links-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-left, .links-right{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.var {
+    height: 200px;
+    width: 200px;
+}
+
+.op {
+    height: 500px;
+    width: 400px;
+}
