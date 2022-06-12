@@ -14,7 +14,9 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import GameScreen from './pages/GameScreen/GameScreen'
 import NivelDois from './pages/Nivel/NivelDois';
+import NivelTres from './pages/Nivel/NivelTres';
 import NivelUm from './pages/Nivel/NivelUm';
+
 
 function App() {
   return (
@@ -32,7 +34,9 @@ function App() {
         <Route exact path="/game-screen" component={GameScreen} />
         <Route exact path="/desafios" component={Desafios} />
         <Route exact path="/nivel-dois" component={NivelDois} />
+        <Route exact path="/nivel-tres" component={NivelTres} />
         <Route exact path="/nivel-um" component={NivelUm} />
+
 
       </Switch>
       <Footer />
