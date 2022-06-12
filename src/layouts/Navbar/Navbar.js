@@ -3,12 +3,15 @@ import { Button } from '../../components/Button'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { ButtonLogado } from '../../components/Button-Logado/ButtonLogado'
+import ModalLogin from '../../components/Modals/ModalLogin/ModalLogin'
 
 function Navbar() {
   const [click, setClick] = useState(false)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
+
+  const [modalLoginOpen, setModalLoginOpen] = useState(false)
 
   return (
     <nav id="header">
@@ -92,12 +95,16 @@ function Navbar() {
         ) : (
           <li>
             <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
+              className="nav-links-mobile openModalBtn"
+              onClick={() => {
+                setModalLoginOpen(true)
+              }}
             >
               Sign Up
             </Link>
+            {modalLoginOpen && (
+              <ModalLogin setOpenModalLogin={setModalLoginOpen} />
+            )}
           </li>
         )}
       </ul>

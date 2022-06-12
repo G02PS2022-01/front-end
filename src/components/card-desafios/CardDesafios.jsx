@@ -19,7 +19,7 @@ export default function CardDesafios(){
                     <h2 class="title">Desafios de Programação</h2>
                 </header>
                 <div className="cards grid">
-                    <div className="card" onClick={() => history.push('#')}>
+                    <div className="card" onClick={() => history.push('/nivel-um')}>
                         <i className=""><Dog size={120} /></i>
                         <button id='btn'>
                             <h3 className="title">Nivel #1</h3>

@@ -4,23 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.what-coding {
-  margin-top: 120px;
-}
-.glossary {
-
-  margin-top: 120px;
-}
-.sign-in {
-
-  margin-top: 120px;
-}
-.about-us {
-  margin-top: 120px;
-}
+.what-coding,
+.glossary,
+.sign-in,
+.about-us,
 .curriculum {
-  margin-top:120px;
+  margin-top: 120px;
 }
+
 ul {
   list-style: none;
 }
