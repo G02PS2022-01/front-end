@@ -7,17 +7,14 @@ import './style.css';
 
 export default function Index(){
     const sintaxe_if = 'if( Condição ){ \n  bloco_if \n}else{\n  bloco_else \n}';
-    const exemplo_if_01 = 'int idade = 60;\nif(idade < 18){ \n  printf("Menor de idade");\n }else if(idade >= 18 && idade < 60){\n  printf("Maior de idade");\n}else{\n  printf("Idoso");\n} ';
-    const exemplo_if_02 = 'int idade = 60;\nif(idade < 18){\n  printf("Menor de idade");\n}else if(idade >= 18 && idade < 60){\n  printf("Maior de idade");\n}else{\n  printf("Idoso");\n}';
+    const exemplo_if_01 = 'int idade = 60;\n\nif(idade < 18){ \n  printf("Menor de idade");\n }else if(idade >= 18 && idade < 60){\n  printf("Maior de idade");\n}else{\n  printf("Idoso");\n} ';
+    const exemplo_if_02 = 'int idade = 60;\n\nif(idade < 18){\n  printf("Menor de idade");\n}else if(idade >= 18 && idade < 60){\n  printf("Maior de idade");\n}else{\n  printf("Idoso");\n}';
 
-    const sintaxe_while = 'while( Condição ){\n  Bloco_while\n}';
-    const exemplo_while_01 = 'int cont = 0;\nwhile(cont == 10){\n  cont ++;\n}';
+    const exemplo_switch_01 = 'switch( valor de um numero inteiro ){\n case 1:\n  Bloco_switch\n  break;\n case 2:\n   Bloco_switch\n   break;\n deault:\n   bloco_de_nenhuma_apcao_acima\n}';
+    const exemplo_switch_02 = 'switch(codigo_lanche){\n case 1:\n  x_tudo = 15;\n  break;\n case 2:\n  pizza = 25\n  break;\n case 3:\n  sushi = 100;\n  break;\n deault:\n  printf("Opcao Invalida");\n}';
 
-    const sintaxe_do_while = 'do{\n Bloco_Do_While \n}while( Condição );';
-    const exemplo_do_while_02 = 'int cont = 0;\ndo{\n  cont ++;\n}while(cont == 10);';
-
-    const sintaxe_for = 'for( Condição ){\n Bloco_for\n}';
-    const exemplo_for = 'int cont = 10;\nfor(int i=0; i<cont; i++){\n  printf("%x", i);\n}';
+    const exemplo_ot_01 = 'Condição ? verdadeiro: falso';
+    const exemplo_ot_02 = "int valor = (opcao == 'S' ) ? 25: 50; ";
 
     return (
         
@@ -56,61 +53,46 @@ export default function Index(){
                     {exemplo_if_02}
                 </SyntaxHighlighter>
 
+                <br/>
+                <h1>Switch Case</h1>
+                <p>
+                    O Switch Case é um seletor que fornece multiplas opções, ele permite avaliar uma variável ou expressão que resulte em um inteiro.
+                    É muito utilizado, principalmente para uso em estruturas de menu, devido sua forma de reduzir a complexidade de varios if-else.
+                </p>
+                <br/>
+                <h2>Sintaxe</h2>
+                <SyntaxHighlighter language="cpp" style={dark}>
+                    {exemplo_switch_01}
+                </SyntaxHighlighter>
+                <br/>
+                <p>
+
+                </p>
+                <br/>
+                <h2>Exemplos</h2>
+                <SyntaxHighlighter language="cpp" style={dark}>
+                    {exemplo_switch_02}
+                </SyntaxHighlighter>
+                <br/>
+                <h1>Operador Ternário</h1>
+                <p>
+                    O operador ternario serve como uma alternativa para substituir if-else, 
+                    devido sua forma reduzida tendo duas opções Verdadeiro(True) ou Falso(False).
+                </p>
+                <h2>Sintaxe</h2>
+                <SyntaxHighlighter language="cpp" style={dark}>
+                    {exemplo_ot_01}
+                </SyntaxHighlighter>
+                <br/>
+                <h2>Exemplos</h2>
+                <SyntaxHighlighter language="cpp" style={dark}>
+                    {exemplo_ot_02}
+                </SyntaxHighlighter>
+                <br/>
+
             </div>
             <br/>
-            <div>
-                <br/>
-                <h1>Estrutura de repetição</h1>
-                <p>
-                   <h3>While</h3>
-                   O comando While permite que um certo trecho de programa seja executado ENQUANTO uma certa condição 
-                   for verdadeira.
-                   
-                </p>
-                <h2>Sintaxe</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {sintaxe_while}
-                </SyntaxHighlighter>
-
-                <h2>Exemplo</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {exemplo_while_01}
-                </SyntaxHighlighter>
-                
-                <br/>
-                <p>
-                    <h3>Do-While</h3>
-                    O comando do-while permite que um certo trecho de programa seja executado ENQUANTO uma certa 
-                    condição for verdadeira.
-                </p>
-                <h2>Sintaxe</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {sintaxe_do_while}
-                </SyntaxHighlighter>
-
-                <h2>Exemplo</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {exemplo_do_while_02}
-                </SyntaxHighlighter>
-                
-                <br/>
-                <p>
-                    <h3>For</h3>
-                    O comando for permite que um certo trecho de programa seja executado um determinado número de vezes
-                </p>
-                <br/>
-                <h2>Sintaxe</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {sintaxe_for}
-                </SyntaxHighlighter>
-
-                <h2>Exemplo</h2>
-                <SyntaxHighlighter language="cpp" style={dark}>
-                    {exemplo_for}
-                </SyntaxHighlighter>
-                <br/>
-                
-            </div>
+            
 
             <div className='links-div'>
                 <Link to='/desafios' className='links-left'>
