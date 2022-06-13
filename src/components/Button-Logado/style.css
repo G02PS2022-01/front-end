@@ -1,0 +1,28 @@
+.DropDowImg{
+    align-items: center;
+      justify-content: center;
+      text-align: center;
+    width: 30px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+  .dropDowAvatar .dropDow-content{
+    position: absolute;
+    text-align: left;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0,0,0, 0.06);
+    font-weight: 500;
+    color: #333;
+    border-radius: 5px;
+  }
+  .dropDowAvatar .dropDow-content .dropDow-item{
+    padding: 10px 20px;
+    cursor: pointer; 
+    transition: all 0.2s;
+    border-radius: 5px;
+  }
+  .dropDowAvatar .dropDow-content .dropDow-item:hover{
+    background: #f4f4f4;
+    
+  }

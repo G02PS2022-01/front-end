@@ -6411,6 +6411,14 @@ performance-now@^2.1.0:
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+<<<<<<< HEAD
+=======
+phosphor-react@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.4.1.tgz#97b0e034d9937db9b97fe53b186e9646464fd4e7"
+  integrity sha512-gO5j7U0xZrdglTAYDYPACU4xDOFBTJmptrrB/GeR+tHhCZF3nUMyGmV/0hnloKjuTrOmpSFlbfOY78H39rgjUQ==
+
+>>>>>>> 4efee02bb927cd3e5e7728aa2ad0bed8af834f19
 picocolors@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz"
