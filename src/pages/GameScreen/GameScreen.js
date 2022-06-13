@@ -7,9 +7,9 @@ export default function GameScreen() {
   const [codigo, setCodigo] = useState('');
   
 
-
   const executa_codigo = () => {
     const source = codigo;
+    let dataReq = '';
 
     axios({
       method: "POST",
@@ -22,44 +22,50 @@ export default function GameScreen() {
         "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
       },
       data: {
-        language_id: 75,
+        language_id: 50,
         source_code: source,
         stdin: "SnVkZ2Uw",
       },
     })
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
+        dataReq = JSON.stringify(response.data);
+        console.log(dataReq);
       })
       .catch((error) => {
         console.log(error);
       }
     );
-
     
-    getRequestCodigo()
+    getRequestCodigo(Object.values(dataReq));
+
   }
 
   const getRequestCodigo = (dataReq)=> {
 
-    const url = "https://judge0.p.rapidapi.com/submissions/" + dataReq;
+    let token = dataReq[1];
 
-    axios({
+    const url = "https://judge0.p.rapidapi.com/submissions/" + token;
+
+    const opcoes = {
       method: "GET",
       url: url,
       params: {base64_encoded: 'true', fields: '*'},
       headers: {
         "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
         "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-      },
-    })
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      }
+    }
+
+    axios.request(opcoes).then(function (response) {
+      console.log(response.data);
+    }).catch(function (error) {
+      console.error(error);
+    });
 
   }
+
+  
 
   const chama_api = (e)=>{
     e.preventDefault()
