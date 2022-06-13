@@ -1,33 +1,38 @@
-
 import './Home.css';
-import React from 'react';
+import React, { useState } from 'react';
 import laptop from '../../../assets/img/screen-laptop.svg';
-import { Link } from 'react-router-dom';
+import ModalLogin from '../../../components/Modals/ModalLogin/ModalLogin';
 
 export default function Home() {
+
+  const [modalLoginOpen, setModalLoginOpen] = useState(false)
 
   return (
     <>
       <section className="section" id="home">
         <div className="container grid">
           <div className="image">
-            <img src={laptop} alt="" />
+            <img src={laptop} alt="imagem inicio" />
           </div>
           <div className="text">
             <h2 className="title">
-              Bem vindo ao DogCode, o ambiente feito para quem deseja começar a programar  
+              Bem-vindo ao <strong>DogCode</strong>, Ambiente feito para quem
+              desejar começar programar
             </h2>
-            <p>
-              Aprenda conceitos que se aplicam a qualquer linguagem de programação
+            <p className="subtitle">
+              Aprenda conceitos que se aplicam a qualquer linguagem de
+              programação.
             </p>
-            <br />
-            <Link className="button" to='/'> 
-              Começar agora
-            </Link>
+            <a style={{cursor: 'pointer'}} className="button openModalBtn" onClick={() => {
+                setModalLoginOpen(true)
+              }}>Começar Agora</a>
           </div>
+          {modalLoginOpen && (
+              <ModalLogin setOpenModalLogin={setModalLoginOpen} />
+            )}
         </div>
       </section>
-      <div class="divider-2"></div>
+      <div className="divider-2"></div>
     </>
   );
 }
