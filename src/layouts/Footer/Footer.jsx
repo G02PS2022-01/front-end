@@ -18,8 +18,8 @@ export default function IndexFooter(){
                 </ul>
                 </div>
                 <div className="social grid">
-                <a target="_blank" href="#"><i className="icon-instagram"></i></a>
-                <a target="_blank" href="#"><i className="icon-facebook"></i></a>
+                <a target="_blank" href="#"><i className="icon-instagram" style={{color: "#fff", fontSize: "25px"}}></i></a>
+                <a target="_blank" href="#"><i className="icon-facebook" style={{color: "#fff", fontSize: "25px"}}></i></a>
                 </div>
             </div>
         </footer>

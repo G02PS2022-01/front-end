@@ -1,0 +1,83 @@
+.modalBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 9, 17, 0.8);
+  z-index: 9999;
+}
+
+.modalContainer {
+  width: 400px;
+  /* height: 500px; */
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.titleCloseBtn button:hover{
+  color: red;
+}
+.containerConfig{
+  display: grid;
+  gap: 20px;
+}
+.containerConfig h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.containerConfig .titleConfig{
+  font-size: 1.1rem
+}
+
+.containerConfig button{
+  width: 100px;
+  font-family: 'Poppins';
+  padding: 5px;
+  color: #fff;
+  background: blueviolet;
+  border: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s
+}
+.containerConfig button:hover{
+  background: rgb(124, 33, 209);
+}
+
+@media (max-width: 1200px){
+  .googleBtn {
+   display: block
+  }
+  .modalContainer .footer button{
+   display: block
+  }
+  .titleCloseBtn button {
+   display: block
+  }
+  .titleCloseBtn{
+    display: block
+  }
+  .containerConfig button{
+    display: block
+  }
+}

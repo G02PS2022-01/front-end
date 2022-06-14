@@ -1,0 +1,130 @@
+.modalBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 9, 17, 0.8);
+  z-index: 9999;
+}
+
+.modalContainer {
+  width: 400px;
+  /* height: 500px; */
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.titleCloseBtn button:hover{
+  color: red;
+}
+.containerBugs{
+  display: grid;
+  gap: 20px;
+}
+.containerBugs h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.containerBugs .titleConfig{
+  font-size: 1.1rem
+}
+
+
+.containerBugs form {
+  margin: 0px;
+}
+
+.containerBugs .textUser{
+  font-size: 0.8rem;
+  margin: 20px auto;
+}
+.buttosform{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.buttosform .cancelBtn {
+  background-color: crimson;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+
+}
+.buttosform .cancelBtn:hover{
+  background-color: rgb(201, 13, 51);
+}
+.buttosform .cancelBtn i {
+  padding-right: 10px;
+}
+
+.buttosform .entrarBtn{
+  background-color: blueviolet;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s
+}
+.buttosform .entrarBtn:hover{
+  background: rgb(124, 33, 209);
+}
+
+@media (max-width: 1200px){
+  .googleBtn {
+   display: block
+  }
+  .modalContainer .footer button{
+   display: block
+  }
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .containerBugs button{
+    display: block
+  }
+  .containerBugs form {
+    margin: 0px;
+  }
+}
