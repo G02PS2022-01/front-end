@@ -80,7 +80,6 @@ export default function GameScreen() {
   }
 
 
-
   const chama_api = (e)=>{
     e.preventDefault()
   }
