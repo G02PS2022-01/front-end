@@ -1,15 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import './GameScreen.css'
 
 export default function GameScreen() {
 
   const [codigo, setCodigo] = useState('');
+
   
-
-
-  const executa_codigo = () => {
+  async function executa_codigo() {
     const source = codigo;
+    let dataReq = ''
 
     axios({
       method: "POST",
@@ -22,48 +22,70 @@ export default function GameScreen() {
         "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
       },
       data: {
-        language_id: 75,
+        language_id: 49,
         source_code: source,
         stdin: "SnVkZ2Uw",
       },
     })
       .then((response) => {
-        console.log(response.data);
+        dataReq = response.data
+        console.log(dataReq);
       })
       .catch((error) => {
         console.log(error);
       }
     );
 
+    let data = dataReq["token"];
+    console.log(data)
+
+    let res = await getRequestCodigo(data)
     
-    getRequestCodigo()
+    return data
   }
 
-  const getRequestCodigo = (dataReq)=> {
+  async function getRequestCodigo(dataR){
 
-    const url = "https://judge0.p.rapidapi.com/submissions/" + dataReq;
+    const token = "9cc64a14-e20d-476c-931e-8bea9e4dc4d4";
 
-    axios({
+    console.log("teste")
+
+    let url = "https://judge0.p.rapidapi.com/submissions/9cc64a14-e20d-476c-931e-8bea9e4dc4d4";
+
+    const data = {
       method: "GET",
-      url: url,
+      url: "https://judge0.p.rapidapi.com/submissions/9cc64a14-e20d-476c-931e-8bea9e4dc4d4",
       params: {base64_encoded: 'true', fields: '*'},
       headers: {
         "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
         "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-      },
-    })
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      }
+    }
 
+    console.log(url)
+
+    setTimeout(()=>{
+      console.log(url)
+      axios.request(data).then(function (response) {
+        let data = response.data;
+        console.log(data);
+      }).catch(function (error) {
+        console.error(error);
+      });
+  
+    }, 6000)
+
+    
+    return data
   }
+
+
 
   const chama_api = (e)=>{
     e.preventDefault()
   }
+
+
 
   return (
     <>
