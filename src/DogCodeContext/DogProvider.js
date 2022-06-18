@@ -17,7 +17,7 @@ export const DogProvider = ({ children }) => {
   async function userRegister(nome, email, password) {
     try {
       setFetchListings(true)
-      await api.post("/listings",
+      await api.post("/auth/register",
         {
           "nome": `${nome}`,
           "email": `${email}`,
