@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 import './GameScreen.css'
 
@@ -9,7 +9,6 @@ export default function GameScreen() {
   
   async function executa_codigo() {
     const source = codigo;
-    let dataReq = ''
 
     axios({
       method: "POST",
@@ -27,56 +26,32 @@ export default function GameScreen() {
         stdin: "SnVkZ2Uw",
       },
     })
-      .then((response) => {
-        dataReq = response.data
-        console.log(dataReq);
+      .then((response)=>{
+
+        console.log(response.data);
+
+        let token = response.data;
+
+        let url =  "https://judge0.p.rapidapi.com/submissions/" + token.token;
+
+        const req = axios({
+          method: "GET",
+          url: url,
+          params: {base64_encoded: 'true', fields: '*'},
+          headers: {
+            "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
+            "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
+          }
+        })
+
+        console.log(req)
       })
+      
       .catch((error) => {
         console.log(error);
       }
     );
 
-    let data = dataReq["token"];
-    console.log(data)
-
-    let res = await getRequestCodigo(data)
-    
-    return data
-  }
-
-  async function getRequestCodigo(dataR){
-
-    const token = "9cc64a14-e20d-476c-931e-8bea9e4dc4d4";
-
-    console.log("teste")
-
-    let url = "https://judge0.p.rapidapi.com/submissions/9cc64a14-e20d-476c-931e-8bea9e4dc4d4";
-
-    const data = {
-      method: "GET",
-      url: "https://judge0.p.rapidapi.com/submissions/9cc64a14-e20d-476c-931e-8bea9e4dc4d4",
-      params: {base64_encoded: 'true', fields: '*'},
-      headers: {
-        "x-rapidapi-key": "9976bf9373msh708cf2036c13e35p1d4f03jsn9a681ec62654",
-        "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-      }
-    }
-
-    console.log(url)
-
-    setTimeout(()=>{
-      console.log(url)
-      axios.request(data).then(function (response) {
-        let data = response.data;
-        console.log(data);
-      }).catch(function (error) {
-        console.error(error);
-      });
-  
-    }, 6000)
-
-    
-    return data
   }
 
 
