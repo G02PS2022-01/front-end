@@ -1,6 +1,7 @@
 .container-game-screen{
   display: grid;
   grid-template-columns: 1fr 2.5fr 1fr;
+  padding-top: 75px;
 }
 aside {
   height: 100vh;
@@ -28,6 +29,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 .container-nivel{
   display: flex;

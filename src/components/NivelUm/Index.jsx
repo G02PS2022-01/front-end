@@ -50,7 +50,7 @@ export default function Index(){
                 </SyntaxHighlighter>
                 <br />
 
-                <div class="var">
+                <div className="var">
                     <img src= {imgVar} />
                 </div>
 
@@ -77,7 +77,7 @@ export default function Index(){
                 <br />
 
                 <h1>Tabela de operadores aritméticos</h1>
-                <div class="op">
+                <div className="op">
                     <img src= {imgOp} />
                 </div>
                 <br/>
