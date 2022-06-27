@@ -1,18 +1,29 @@
 import React, {useState} from 'react'
 import axios from 'axios';
+import MonacoEditor from '@monaco-editor/react';
+import { Base64 } from 'js-base64';
 import './GameScreen.css'
 
 export default function GameScreen() {
 
   const [codigo, setCodigo] = useState('');
 
+  let decode_codigo = '';
+  let resultao_compilador = "";
+
   
-  async function executa_codigo() {
-    const source = codigo;
+  function executa_codigo() {
+
+    const vari = Base64.encode(codigo);
+    const source = vari;
+    let data = '';
+    const BASE_URL = 'https://judge0.p.rapidapi.com/submissions';
+
+    console.log(source)
 
     axios({
       method: "POST",
-      url: "https://judge0.p.rapidapi.com/submissions",
+      url: BASE_URL,
       params: {base64_encoded: 'true', fields: '*'},
       headers: {
         "content-type": "application/json",
@@ -32,7 +43,7 @@ export default function GameScreen() {
 
         let token = response.data;
 
-        let url =  "https://judge0.p.rapidapi.com/submissions/" + token.token;
+        let url = BASE_URL + "/" + token.token;
 
         const req = axios({
           method: "GET",
@@ -44,21 +55,24 @@ export default function GameScreen() {
           }
         })
 
-        console.log(req)
+        return req;
+
       })
-      
+      .then((response)=>{
+        data = response.data;
+        console.log(data);
+        decode_codigo = Base64.decode(data.source_code);
+        resultao_compilador = Base64.decode(data.stdout);
+
+        console.log(decode_codigo)
+        console.log(resultao_compilador)
+      })
       .catch((error) => {
         console.log(error);
       }
     );
 
   }
-
-
-  const chama_api = (e)=>{
-    e.preventDefault()
-  }
-
 
 
   return (
@@ -92,7 +106,7 @@ export default function GameScreen() {
           </div>
         </aside>
         <div className="central-game-screen">
-          <header className="header-gamer-full">
+          {/* <header className="header-gamer-full">
             <nav className="container-nivel">
               <a className="logo-nivel" href="#">
                 Dog<span>Code</span>.
@@ -105,34 +119,31 @@ export default function GameScreen() {
                 </ul>
               </div>
             </nav>
-          </header>
+          </header> */}
           <div className="form-game-screen">
-            <form onSubmit={chama_api}>
-              <textarea
-                id="story"
-                name="story"
-                placeholder="Digite a solução aqui"
-                onChange={(e) =>{
-                  setCodigo(e.target.value)
-                }}
-              ></textarea>
-              <button onClick={()=>{
+            <MonacoEditor
+              height="80vh"
+              language="c"
+              theme="vs-dark"
+              onChange={(value) =>{setCodigo(value)}}
+            />
+             <button onClick={()=>{
                   executa_codigo()
               }} className="button-executar">Executar código</button>
-            </form>
           </div>
 
-          <footer>
+          {/* <footer>
             <h2>Botões de resposta</h2>
-          </footer>
+          </footer> */}
         </div>
         <aside className="aside-final-game">
           <div className="aside-solucao">
             <h2>Solução</h2>
+            <p>{resultao_compilador}</p>
           </div>
-          <div className="aside-outro">
+          {/* <div className="aside-outro">
             <h2>outro</h2>
-          </div>
+          </div> */}
         </aside>
       </main>
     </>
